@@ -1,0 +1,19 @@
+.navbar{
+    display: grid;
+    grid-template-columns: minmax(0, .7fr) minmax(90rem, 75%) minmax(0, .7fr);
+    grid-template-rows: 3rem 10rem;
+
+
+   
+    &__top{
+        
+
+    }
+    &__bottom{
+        
+
+    }
+
+
+
+}
