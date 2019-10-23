@@ -17,10 +17,10 @@ class Navbar extends Component {
                     </a>
                     <div className="navbar__bottom-nav">
                         <ul>
-                            <li>Home</li>
-                            <li>Services</li>
-                            <li>About</li>
-                            <li>Contact Us</li>
+                            <li className="navbar__bottom-nav-list">Home</li>
+                            <li  className="navbar__bottom-nav-list">Services</li>
+                            <li  className="navbar__bottom-nav-list">About</li>
+                            <li  className="navbar__bottom-nav-list">Contact Us</li>
                         </ul>
                     </div>
 

@@ -9,6 +9,8 @@
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
+    justify-content: space-between;
+    
 
     &-logo {
       height: 100%;
@@ -22,6 +24,25 @@
     }
 
     &-nav{
+        align-self: center;
+
+        & ul{
+            
+            list-style-type: none;
+            display: flex;
+            
+
+        }
+
+        &-list{
+            font-size: 2rem;
+            font-weight: 700;
+            
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+        
 
     }
   }
