@@ -28,7 +28,7 @@ const slideImages = [
         <div className="slide-container">
           <Slide {...properties}>
             <div className="each-slide">
-              <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+              <div className="1" style={{'backgroundImage': `url(${slideImages[0]})`}}>
                 <div className="slide__container-header">
                   <h1>Trusted Process Servers </h1>
                   <h4>Serving all of Illinois and Headquarted in Chicago, IL </h4>

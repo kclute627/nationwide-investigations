@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Dropdown from './Dropdown'
 import ReactSvg from 'react-svg';
 import logo from "../assets/logo/logo-large.png";
 import phone from "../assets/icons/mobile.svg";
@@ -36,7 +37,8 @@ class Navbar extends Component {
                 <Link className = { home ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item" } to="/">Home</Link>
               </li>
               <li className="navbar__bottom-nav-list">
-                <Link className = "navbar__bottom-nav-list-item" to="/services"> Services </Link>
+                <Link className = "navbar__bottom-nav-list-item" to="/services"> Services  </Link>
+                
               </li>
               <li className="navbar__bottom-nav-list">
                 <Link className = "navbar__bottom-nav-list-item" to="/about">About</Link>
@@ -45,6 +47,7 @@ class Navbar extends Component {
                 <Link className = "navbar__bottom-nav-list-item" to="/contact">Contact Us</Link>
               </li>
             </ul>
+            
           </div>
         </div>
       </div>
