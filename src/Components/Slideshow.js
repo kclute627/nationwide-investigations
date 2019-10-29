@@ -1,13 +1,13 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import man from '../assets/building-2.jpg'
+import court from '../assets/court.jpg'
 import handshake from '../assets/handshake.jpg';
 import camara from '../assets/Camara_lens.jpg';
 
 
 const slideImages = [
     handshake,
-    man, 
+    court, 
    camara
 
   ];
@@ -32,8 +32,7 @@ const slideImages = [
                 <div className="slide__container-header">
                   <h1>Trusted Process Servers </h1>
                   <h4>Serving all of Illinois and Headquarted in Chicago, IL </h4>
-                  <button className="homepage__btn btn-left">Send Us A Job</button>
-                  <button className="homepage__btn">Learn More About Process Serving</button>
+                  <button className="homepage__btn btn-left">Send Us A Job</button>             
                   
                 </div>
 
@@ -42,11 +41,24 @@ const slideImages = [
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+              <div className="slide__container-header-1">
+                  <h1>Document Retrieval  </h1>
+                  <h4>If you need a copy of a court file give us a call </h4>
+                  
+                  <button className="homepage__btn btn-left">Send Us A Job</button>             
+                  
+                </div>
                 
               </div>
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+              <div className="slide__container-header-2">
+                  <h1>Investigations </h1>
+                  <h4>give us a call for a free case evaluation </h4>
+                  <button className="homepage__btn btn-left">Send Us A Job</button>             
+                  
+                </div>
                 
               </div>
             </div>

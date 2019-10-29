@@ -2,12 +2,14 @@
   &__btn {
       display: none;
       padding: 1.5rem;
-      background: rgba($color-primary, .5);
+      width: 26rem;
+      background: $color-primary;
       border: 2px solid #fff;
       border-radius: 1000px;
       margin-top: 3rem;
       font-size: 2rem;
       cursor: pointer;
+      animation: btn 2s;
       &:hover{
           background: $color-primary;
           border: none;
@@ -26,6 +28,7 @@
     &-left{
         margin-left: 20%;
         margin-right: 2.5rem;
+        animation-name: btn;
     }
     &-rignt{
 
@@ -87,9 +90,10 @@ h3 {
       bottom: 7rem;
       right: 17rem;
       color: #fff;
+      
 
       & h1 {
-        font-size: 8rem;
+        font-size: 9rem;
         text-shadow: 1px 1px 1px;
         margin-bottom: -2rem;
       }
@@ -97,6 +101,51 @@ h3 {
         font-size: 4rem;
         margin-left: 2rem;
       }
+      &-1{
+        position: relative;
+        bottom: 7rem;
+        right: 17rem;
+        color: rgb(255, 255, 255);
+        & h1 {
+            font-size: 9rem;
+            text-shadow: 1px 1px 1px;
+            margin-bottom: -2rem;
+          }
+          & h4 {
+            font-size: 4rem;
+            margin-left: 2rem;
+          }
+      }
+      &-2{
+        position: relative;
+        bottom: 7rem;
+        right: 19rem;
+        color: rgb(255, 255, 255);
+        & h1 {
+            font-size: 9rem;
+            text-shadow: 1px 1px 1px;
+            margin-bottom: -2rem;
+          }
+          & h4 {
+            font-size: 4rem;
+            
+            text-transform: capitalize;
+          }
+      }
     }
   }
+}
+
+
+
+@keyframes btn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
