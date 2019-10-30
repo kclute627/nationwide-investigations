@@ -39,6 +39,10 @@
     display: flex;
     justify-content: space-between;
 
+    &-icon{
+      
+    }
+
     &-logo {
       height: 100%;
       width: 39rem;
@@ -74,8 +78,23 @@
           text-decoration: none;
           color: $color-gray;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-items: center;
           
           transition: all .5s;
+          & svg{
+            
+          height: 1.5rem;
+          width: 1.5rem;
+           justify-self: center;
+           margin-left: .75rem;
+           
+           
+           
+      
+          }
 
           &:after {
             position: absolute;
@@ -107,12 +126,5 @@
 .highlight {
   color: $color-primary;
 }
-
-
-
-
-
-
-
 
 

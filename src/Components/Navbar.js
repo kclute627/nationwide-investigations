@@ -1,13 +1,30 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import Dropdown from '../Components/Dropdown';
 import ReactSvg from 'react-svg';
 import logo from "../assets/logo/logo-large.png";
 import phone from "../assets/icons/mobile.svg";
 import mail from "../assets/icons/mail.svg";
+import down from '../assets/icons/down.svg';
+
 
 class Navbar extends Component {
+    state={
+        hover: false,
+    }
 
+    hoverHandler = ()=> {
+        if(!this.state.hover){
+            this.setState({hover: true})
+        }
+        
+    }
+    hoverLeave = () => {
+        if(this.state.hover){
+             this.setState({hover: false})
+        }
+       
+    }
 
   render() {
 
@@ -36,8 +53,9 @@ class Navbar extends Component {
               <li className="navbar__bottom-nav-list">
                 <Link className = { home ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item" } to="/">Home</Link>
               </li>
-              <li className="navbar__bottom-nav-list">
-                <Link className = "navbar__bottom-nav-list-item" to="/services"> Services  </Link>
+              <li className="navbar__bottom-nav-list" onMouseEnter={this.hoverHandler } onMouseLeave={this.hoverLeave}>
+                <Link className = "navbar__bottom-nav-list-item " to="/services"> Services <ReactSvg clasname="navbar__bottom-icon" src={down}/> {this.state.hover ?<Dropdown/> :null }  </Link>
+                
                 
               </li>
               <li className="navbar__bottom-nav-list">
@@ -49,6 +67,8 @@ class Navbar extends Component {
             </ul>
             
           </div>
+          
+          
         </div>
       </div>
     );
