@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar';
-import Homepage from './Homepage'
+import Homepage from './Homepage';
+import Services from './Services';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       <Navbar
       home = "true" />
       <Homepage />
+      <Services />
     </div>
     )
   }
