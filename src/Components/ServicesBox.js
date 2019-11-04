@@ -12,3 +12,6 @@ const ServicesBox = () => {
     )
 
 }
+
+
+export default ServicesBox;
