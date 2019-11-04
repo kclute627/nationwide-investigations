@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
     grid-template-rows: 3rem;
+   
     &-left {
       grid-column: 2/3;
       display: flex;

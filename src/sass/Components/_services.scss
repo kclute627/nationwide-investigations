@@ -2,7 +2,7 @@
   &__container {
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-    grid-template-rows: auto 12rem;
+    grid-template-rows: auto auto 7rem;
     background: rgb(255, 255, 255);
     margin-top: -11rem;
   }
@@ -18,7 +18,28 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 6rem;
+    
   }&__box{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 4rem;
+    justify-content: space-around;
+    
+
+    &-box{
+      display: grid;
+      grid-template-rows: 10rem 13rem 6rem;
+      grid-template-columns: 19rem;
+      background: chocolate;
+      &:first-child{
+        margin-left: 19rem;
+      }
+      &:last-child{
+        margin-right: 19rem;
+      }
+
+    }
       
   }
 }
