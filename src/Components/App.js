@@ -12,7 +12,7 @@ class App extends Component {
     return(
       <div className="App">
       <Navbar
-      home = "true"/>
+      home = "true" />
       <Homepage />
     </div>
     )
