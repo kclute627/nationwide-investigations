@@ -20,7 +20,7 @@
   &__container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80rem;
+    grid-template-rows: calc(100vh - 15rem);
     overflow: hidden;
   }
 }
@@ -54,7 +54,7 @@ h3 {
   background: no-repeat center center ;
   background-size: auto;
   
-  height: 700px;
+  height: calc(100vh - 15rem)
  
 }
 

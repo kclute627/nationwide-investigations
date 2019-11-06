@@ -2,9 +2,9 @@
   &__container {
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-    grid-template-rows: auto auto 7rem;
+    grid-template-rows: auto auto 77rem;
     background: rgb(255, 255, 255);
-    margin-top: -11rem;
+    margin-top: -1rem;
   }
   &__header {
     grid-column: 2/3;
@@ -25,18 +25,60 @@
     grid-row: 2/3;
     margin-top: 4rem;
     justify-content: space-around;
+   
     
 
     &-box{
       display: grid;
-      grid-template-rows: 10rem 13rem 6rem;
-      grid-template-columns: 19rem;
-      background: chocolate;
+      grid-template-rows: auto auto 6rem;
+      grid-template-columns: 29rem;
+      
+      
       &:first-child{
         margin-left: 19rem;
       }
       &:last-child{
         margin-right: 19rem;
+      }
+
+      &-icon{
+        border-radius: 10000px;
+        height: 12rem;
+        width: 12rem;
+        background: $color-primary;
+        justify-self: center;
+       
+        z-index: 1;
+        grid-row: 1/2;
+        transition: all .3s;
+
+        & svg{
+          position: relative;
+          top: 1.9rem;
+          left: 2.3rem;
+          height: 7rem;
+          width: 7rem;
+          fill: #fff;
+          
+          
+
+
+        }
+        &:hover {
+          background: darken($color-primary, 10%);
+
+          & svg{
+            fill: rgb(204, 204, 204);
+          }
+        }
+      }
+      &-header{
+        grid-row: 2/3;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 2rem;
       }
 
     }

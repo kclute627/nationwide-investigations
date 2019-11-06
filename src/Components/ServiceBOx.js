@@ -3,10 +3,14 @@ import ReactSvg from 'react-svg';
 
 
 
-const ServicesBox = () => {
+const ServicesBox = (props) => {
 
     return(
         <div className="services__box-box">
+            <div className="services__box-box-icon">
+                <ReactSvg src={props.icon} />
+            </div>
+            <div className="services__box-box-header">{props.header}</div>
 
         </div>
     )
