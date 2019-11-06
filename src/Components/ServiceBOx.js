@@ -11,6 +11,7 @@ const ServicesBox = (props) => {
                 <ReactSvg src={props.icon} />
             </div>
             <div className="services__box-box-header">{props.header}</div>
+            <div className="services__box-box-text">{props.text}</div>
 
         </div>
     )
