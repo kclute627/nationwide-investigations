@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 
 
 class Dropdown extends Component {
@@ -11,9 +11,9 @@ class Dropdown extends Component {
             <div className="dropdown">
                 
                 <div className="dropdown-4"></div>
-                <div className="dropdown-1">Service Of Process</div>
-                <div className="dropdown-2">Document Retrieval</div>
-                <div className="dropdown-3">Investigations</div>
+                <Link to="/processserving"className="dropdown-1">Service Of Process</Link>
+                <Link  to="/document" className="dropdown-2">Document Retrieval</Link>
+                <Link  to="/investigations" className="dropdown-3">Investigations</Link>
 
             </div>
         )

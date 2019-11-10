@@ -18,6 +18,8 @@ class Services extends Component {
             jobs large and small. Our team of process servers are based in Chicago, IL, 
             but we have process servers across the entire state of Illinois. If you have legal 
             papers that need to be served give us a call today."
+            btnText="Learn More"
+            btnPath="/processServing"
           />
           <ServicesBox
             icon={mag}
@@ -26,8 +28,15 @@ class Services extends Component {
             handled hundreds of cases and specialize in Criminal Defense Investigations. 
             We also conduct Employment Background Checks as well as Civil Investigations. 
             Give us a call to day to see if we can assist you with your case."
+            btnText="Learn More"
+            btnPath="/investigations"
           />
-          <ServicesBox header="Document Retrivial" icon={library} text="We travel to courthouses across Illinois, including Cook County, on a daily basis. If you need a copy of a case from an Illinois courthouse give us a call today. Our experienced researchers will pull the file, make the appropriate copies and scan and email the documents to you." />
+          <ServicesBox header="Document Retrivial" icon={library} text="We travel to courthouses across Illinois, including Cook County, on a daily basis. 
+          If you need a copy of a case from an Illinois courthouse give us a call today. 
+          Our experienced researchers will pull the file, make the appropriate copies and scan and 
+          email the documents to you." 
+          btnText="Learn More"
+          btnPath="/document"/>
         </div>
       </div>
     );

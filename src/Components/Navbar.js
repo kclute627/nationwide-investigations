@@ -28,7 +28,7 @@ class Navbar extends Component {
 
   render() {
 
-  const {home} = this.props;
+  const {home, about} = this.props;
     return (
       <div className="navbar">
         <div className="navbar__top">
@@ -42,24 +42,24 @@ class Navbar extends Component {
 
         </div>
         <div className="navbar__bottom">
-          <a
-            href="wwww.nationwide-investigations.com"
+          <Link
+            to='/'
             className="navbar__bottom-logo"
           >
             <img src={logo} alt="" />
-          </a>
+          </Link>
           <div className="navbar__bottom-nav">
             <ul>
               <li className="navbar__bottom-nav-list">
                 <Link className = { home ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item" } to="/">Home</Link>
               </li>
               <li className="navbar__bottom-nav-list" onMouseEnter={this.hoverHandler } onMouseLeave={this.hoverLeave}>
-                <Link className = "navbar__bottom-nav-list-item " to="/services"> Services <ReactSvg clasname="navbar__bottom-icon" src={down}/> {this.state.hover ?<Dropdown/> :null }  </Link>
+                <Link className = "navbar__bottom-nav-list-item " > Services <ReactSvg clasname="navbar__bottom-icon" src={down}/> {this.state.hover ?<Dropdown/> :null }  </Link>
                 
                 
               </li>
               <li className="navbar__bottom-nav-list">
-                <Link className = "navbar__bottom-nav-list-item" to="/about">About</Link>
+                <Link className ={ about ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item"} to="/about">About</Link>
               </li>
               <li className="navbar__bottom-nav-list">
                 <Link className = "navbar__bottom-nav-list-item" to="/contact">Contact Us</Link>

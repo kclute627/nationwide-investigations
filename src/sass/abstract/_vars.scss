@@ -11,6 +11,9 @@ $color-gray: rgb(61, 61, 61);
     padding: 1rem;
     text-align: center;
     transition: all .5s;
+    text-decoration: none;
+    color: #000;
+    
 }
 @mixin dropdownhover{
     background: $color-primary;

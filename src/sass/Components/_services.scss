@@ -12,67 +12,60 @@
     text-transform: capitalize;
     font-size: 5.5rem;
     font-weight: 700;
-    color: $color-primary;
-    border-bottom: 2px solid #000;
+    color: #000;
+    border-bottom: 2px solid $color-primary;
     width: 45%;
     text-align: center;
     margin: 0 auto;
     margin-top: 6rem;
-    
-  }&__box{
+  }
+  &__box {
     display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 4rem;
+    margin-top: 5rem;
     justify-content: space-around;
-   
-    
 
-    &-box{
+    &-box {
       display: grid;
       grid-template-rows: 12rem 7rem 29rem 3rem;
       grid-template-columns: 31rem;
-      
-      
-      &:first-child{
+
+      &:first-child {
         margin-left: 15rem;
       }
-      &:last-child{
+      &:last-child {
         margin-right: 15rem;
       }
 
-      &-icon{
+      &-icon {
         border-radius: 10000px;
         height: 12rem;
         width: 12rem;
         background: $color-primary;
         justify-self: center;
-       
+
         z-index: 1;
         grid-row: 1/2;
-        transition: all .3s;
+        transition: all 0.3s;
 
-        & svg{
+        & svg {
           position: relative;
           top: 1.9rem;
           left: 2.3rem;
           height: 7rem;
           width: 7rem;
           fill: #fff;
-          
-          
-
-
         }
         &:hover {
           background: darken($color-primary, 10%);
 
-          & svg{
+          & svg {
             fill: rgb(204, 204, 204);
           }
         }
       }
-      &-header{
+      &-header {
         grid-row: 2/3;
         text-align: center;
         text-transform: uppercase;
@@ -80,15 +73,45 @@
         font-weight: 700;
         margin-top: 2rem;
       }
-      &-text{
+      &-text {
         grid-row: 3/4;
         font-size: 1.7rem;
         margin-top: 1.5rem;
         text-align: justify;
-        
       }
+      &-btn {
+        grid-row: 4/5;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin: 0 auto;
 
+        &-1 {
+          border-radius: 1000px;
+          padding: 1rem;
+          
+          width: 19rem;
+          color: #fff;
+          background: $color-primary;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 2rem;
+          box-shadow: none;
+          transition: all .3s;
+          &:hover{
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 2px 2px 2px 2px rgba(5, 5, 5, 0.24);
+            background: darken($color-primary,10%);
+          }
+          &:active{
+            transform: scale(1) translateY(0);
+            box-shadow: 1px 1px 1px 1px rgba(5, 5, 5, 0.24);
+            background: darken($color-primary,10%);
+
+          }
+        }
+      }
     }
-      
   }
 }

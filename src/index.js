@@ -2,13 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./sass/main.scss";
 import App from './Components/App';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import About from './Components/About'; 
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Investigations from './Components/Services/Investigations';
+import Document from './Components/Services/Document';
+import ProcessServing from './Components/Services/ProcessServing';
+import Errors from './Components/Errors';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
     <Router>
-        <Route exact path='/' component={App} />       
+         <Switch>
+        <Route path='/about' component={About}/>
+        <Route path='/processserving' component={ProcessServing}/>
+        <Route path= '/investigations' component={Investigations}/>
+        <Route path= '/document' component={Document}/>
+        <Route exact path='/' component={App} />  
+        <Route component={Errors}/>     
+    </Switch>
     </Router>
+   
 )
 
 ReactDOM.render(routing, document.getElementById('root'));
