@@ -57,15 +57,16 @@
     }
 
     &-logo {
-      height: 100%;
-      width: 39rem;
-      margin: 0;
+      
+         
       grid-column: 2/3;
       grid-row: 1/2;
+      
 
       & img {
         max-width: 29rem;
         height: 12rem;
+        margin-left: 5rem;
       }
     }
 
