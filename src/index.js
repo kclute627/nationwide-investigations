@@ -8,6 +8,7 @@ import Investigations from './Components/Services/Investigations';
 import Document from './Components/Services/Document';
 import ProcessServing from './Components/Services/ProcessServing';
 import Errors from './Components/Errors';
+import Contact from './Components/Contact';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -17,6 +18,7 @@ const routing = (
         <Route path='/processserving' component={ProcessServing}/>
         <Route path= '/investigations' component={Investigations}/>
         <Route path= '/document' component={Document}/>
+        <Route path= '/contact' component={Contact}/>
         <Route exact path='/' component={App} />  
         <Route component={Errors}/>     
     </Switch>

@@ -1,3 +1,151 @@
 .footer{
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
+    grid-template-rows: 5rem auto 5rem;
+    background: rgb(29, 29, 29);
+    transition: all 5s;
     
+
+    &__right{
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        transition: all 5s;
+        
+        
+       
+        
+        
+
+
+        &-logo{
+            height: 12rem;
+            width: 25rem;
+            margin-right: 2rem;
+
+        }
+        &-link{
+            border: 2px solid white;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 1000px;
+            display: flex;
+            align-self: center;
+            margin-top: 3rem;
+            margin-right: .22rem;
+            transition: all 5s;
+            &:hover{
+                   
+                & svg{
+                    fill: #4267B2;
+                }
+            }
+            
+
+            
+
+            & svg {
+                fill: #fff;
+                position: relative;
+                top: 9px;
+                left: 9px;
+                height: 3rem;
+                width: 3rem;
+                transition: all .5s;
+
+                
+            }
+            &-1{
+                border: 2px solid white;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 1000px;
+                display: flex;
+                align-self: center;
+                margin-top: 3rem;
+                margin-right: .22rem;
+
+                &:hover{
+                   
+                    & svg{
+                        fill: #1da1f2;
+                    }
+                }
+                & svg {
+                    fill: #fff;
+                    position: relative;
+                    top: 9px;
+                    left: 11px;
+                    height: 3rem;
+                    width: 3rem;
+                    transition: all .5s;
+    
+                    
+                }
+
+            }
+            &-2{
+                border: 2px solid white;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 1000px;
+                display: flex;
+                align-self: center;
+                margin-top: 3rem;
+                margin-right: .22rem;
+                
+
+                &:hover{
+                   
+                    & svg{
+                        fill: #0077b5;
+                    }
+                }
+                & svg {
+                    fill: #fff;
+                    position: relative;
+                    top: 8px;
+                    left: 11px;
+                    height: 3rem;
+                    width: 3rem;
+                    transition: all .5s;
+    
+                    
+                }
+
+            }
+            &-3{
+                border: 2px solid white;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 1000px;
+                display: flex;
+                align-self: center;
+                margin-top: 3rem;
+                margin-right: .22rem;
+
+                &:hover{
+                   
+                    & svg{
+                        fill: #c13584;
+                    }
+                }
+                & svg {
+                    fill: #fff;
+                    position: relative;
+                    top: 10px;
+                    left: 10px;
+                    height: 3rem;
+                    width: 3rem;
+                    transition: all .5s;
+    
+                    
+                }
+
+            }
+        }
+        
+    }
+
+
 }

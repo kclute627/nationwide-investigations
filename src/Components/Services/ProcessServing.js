@@ -9,7 +9,7 @@ class ProcessServing extends Component{
 
         return(
             <div className="document__container">
-                <Navbar/>
+                <Navbar services= "true"/>
             </div>
         )
     }

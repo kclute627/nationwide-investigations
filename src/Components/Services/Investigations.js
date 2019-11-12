@@ -9,7 +9,7 @@ class Investigations extends Component{
 
         return(
             <div className="investigations__container">
-                <Navbar/>
+                <Navbar services="true"/>
             </div>
         )
     }

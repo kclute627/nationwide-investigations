@@ -28,7 +28,7 @@ class Navbar extends Component {
 
   render() {
 
-  const {home, about} = this.props;
+  const {home, about, services, contact} = this.props;
     return (
       <div className="navbar">
         <div className="navbar__top">
@@ -54,7 +54,7 @@ class Navbar extends Component {
                 <Link className = { home ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item" } to="/">Home</Link>
               </li>
               <li className="navbar__bottom-nav-list" onMouseEnter={this.hoverHandler } onMouseLeave={this.hoverLeave}>
-                <Link className = "navbar__bottom-nav-list-item " > Services <ReactSvg clasname="navbar__bottom-icon" src={down}/> {this.state.hover ?<Dropdown/> :null }  </Link>
+                <Link className = { services ? "navbar__bottom-nav-list-item highlight "  :  "navbar__bottom-nav-list-item"}> Services <ReactSvg clasname="navbar__bottom-icon" src={down}/> {this.state.hover ?<Dropdown/> :null }  </Link>
                 
                 
               </li>
@@ -62,7 +62,7 @@ class Navbar extends Component {
                 <Link className ={ about ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item"} to="/about">About</Link>
               </li>
               <li className="navbar__bottom-nav-list">
-                <Link className = "navbar__bottom-nav-list-item" to="/contact">Contact Us</Link>
+                <Link className = { contact ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item"} to="/contact">Contact Us</Link>
               </li>
             </ul>
             
