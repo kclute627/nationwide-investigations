@@ -26,7 +26,7 @@
       margin-left: 7rem;
 
       &-number {
-        color: rgb(228, 228, 228);
+        color: rgb(255, 255, 255);
         margin-left: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
@@ -34,7 +34,7 @@
       }
 
       & svg {
-        fill: rgb(228, 228, 228);
+        fill: rgb(255, 255, 255);
         padding-top: 0.8rem;
         height: 2rem;
         width: 2rem;
@@ -46,7 +46,7 @@
     grid-row: 2/3;
     display: flex;
     justify-content: space-between;
-    background: #fff;
+    background: rgb(240, 240, 240);
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
 
