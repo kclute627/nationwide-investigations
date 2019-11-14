@@ -46,9 +46,10 @@
     grid-row: 2/3;
     display: flex;
     justify-content: space-between;
-    background: rgb(240, 240, 240);
+    background: rgb(248, 248, 248);
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
+    height: 12rem;
 
     
 

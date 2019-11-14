@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import Footer from '../Components/Footer';
 
 class Errors extends Component {
   render() {
@@ -9,6 +10,7 @@ class Errors extends Component {
         <div className="error__background">
 
         </div>
+        <Footer/>
       </div>
     );
   }
