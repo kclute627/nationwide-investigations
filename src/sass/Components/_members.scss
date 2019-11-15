@@ -21,6 +21,7 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 6rem;
+        
     }
     &__img{
         grid-column: 2/3;
@@ -28,17 +29,40 @@
         display: flex;
         justify-content: center;
         margin-top: 2.5rem;
+        transition: all 1.5s;
+       
+        
+        & a{
+            
+            transition: all 1.5s;
+            
+        }
         &-1{
             height: 14.5rem;
             width: 29.5rem;
             margin-right: 11.5rem;
+            transition: all .5s;
+            animation-timing-function: slide 2s;
         }
         &-2{
             height:14.5rem;
             width: 14.5rem;
             margin-left: -3rem;
             margin-right: 4.5rem;
+            transition: all .5s;
         }
 
     }
 }
+
+@keyframes slide {
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+
