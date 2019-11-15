@@ -2,7 +2,7 @@
   &__container {
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-    grid-template-rows: auto auto 77rem;
+    grid-template-rows: auto auto;
     background: rgb(255, 255, 255);
     margin-top: -1rem;
   }

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Navbar from './Navbar';
 import Homepage from './Homepage'
 import Footer from './Footer';
-import Services from './Services'
+import Services from './Services';
+import Members from './Members';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
       home = "true"/>
       <Homepage />
       <Services/>
+      <Members />
       <Footer/>
     </div>
     )

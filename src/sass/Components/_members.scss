@@ -1,0 +1,44 @@
+.members{
+
+
+
+    &__container{
+        display: grid;
+        grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
+        grid-template-rows: auto 22rem;
+        background: rgb(253, 253, 253);
+        margin-top: 11rem;
+    }
+    &__header{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-transform: capitalize;
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 2px solid $color-primary;
+        width: 45%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+    &__img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+        &-1{
+            height: 14.5rem;
+            width: 29.5rem;
+            margin-right: 11.5rem;
+        }
+        &-2{
+            height:14.5rem;
+            width: 14.5rem;
+            margin-left: -3rem;
+            margin-right: 4.5rem;
+        }
+
+    }
+}
