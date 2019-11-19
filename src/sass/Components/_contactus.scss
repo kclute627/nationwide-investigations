@@ -3,12 +3,36 @@
 
 
     &__container{
-        background: url('../../assets/phone.jpg');
+        background: url('../../assets/phone2.jpg');
         background-size: cover;
         background-position: center;
-        height: 45rem;
-        width: 100%;
+        
+        margin-top: 5.5rem;;
+        display: grid;
+        grid-template-columns: .3fr minmax(60rem, 1fr) minmax(60rem, 1fr) .3fr;
+        grid-template-rows: 9rem 50rem 5rem;
+    }
+    &__header{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
         margin-top: 5rem;
+        text-transform: capitalize;
+        font-size: 5.5rem;
+        font-weight: 700;
+        color: #fff;
+        border-bottom: 2px solid rgb(236, 236, 236);
+        width: 45%;
+        text-align: center;
+
+    }
+    &__contact{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
     }
 
 }
