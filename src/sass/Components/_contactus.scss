@@ -10,7 +10,7 @@
         margin-top: 5.5rem;;
         display: grid;
         grid-template-columns: .3fr minmax(60rem, 1fr) minmax(60rem, 1fr) .3fr;
-        grid-template-rows: auto 50rem 5rem;
+        grid-template-rows: auto auto 5rem;
     }
     &__header{
         grid-column: 2/4;
@@ -33,6 +33,117 @@
         grid-row: 2/3;
         display: flex;
         flex-direction: column;
+
+        &-header{
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            
+            text-align: center;
+            border-bottom: 2px solid rgb(236, 236, 236);
+            width: 45%;
+            margin: 0 auto;
+            margin-top: 1.75rem;
+        }
+        &-name{
+            @include input;
+            
+        }
+        &-email{
+            @include input;
+
+        }
+        &-message{
+            @include input;
+            height: 19rem;
+            resize: none;
+            font-family: 'Raleway';
+            
+        }
+        &-submit{
+            padding: 2rem;
+            width: 15rem;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.609);
+            color: #fff;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            
+            
+        }
     }
 
 }
+
+
+button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+    background: rgba(0,0,0,0.09);
+  }
+  span{
+    display: block;
+    padding: 25px 80px;
+  }
+  button::before, button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  button:hover::before, button:hover::after{
+    width: 100%;
+  }
+  button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  /*----- button 1 -----*/
+  .btn-1::before, .btn-1::after{
+    transition-delay: 0.2s;
+  }
+  .btn-1 span::before, .btn-1 span::after{
+    transition-delay: 0s;
+  }
+  .btn-1::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-1::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-1 span::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-1 span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-1:hover::before, .btn-1:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-1:hover span::before, .btn-1:hover span::after{
+    transition-delay: 0.2s;
+  }
+

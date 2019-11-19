@@ -12,6 +12,20 @@ class ContactUs extends Component {
                     <h1 className="contactus__contact-header">
                         Send Us a Message
                     </h1>
+                    
+                    <input type="text" className="contactus__contact-name" placeholder="Name"/>
+                    <input type="email" className="contactus__contact-email" placeholder="Email"/>
+                    <textarea name="message" className="contactus__contact-message" placeholder="Send Us A Message"></textarea>
+                    <button className="btn-1">
+                        <span>
+                            Submit
+                        </span>
+                            
+                      
+                        
+                    </button>
+                    
+                    
                 </div>
 
             </div>
