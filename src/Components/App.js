@@ -4,6 +4,7 @@ import Homepage from './Homepage'
 import Footer from './Footer';
 import Services from './Services';
 import Members from './Members';
+import ContactUs from './ContactUs';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
       home = "true"/>
       <Homepage />
       <Services/>
+      <ContactUs />
       <Members />
       <Footer/>
     </div>
