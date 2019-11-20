@@ -23,23 +23,25 @@
     color: #fff;
     border-bottom: 2px solid rgb(236, 236, 236);
     width: 45%;
-    text-align: center;
+    
   }
   &__contact {
     grid-column: 3/4;
     grid-row: 2/3;
+    justify-self: start;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
 
     &-header {
       color: #fff;
       text-transform: capitalize;
       font-size: 2.5rem;
-
       text-align: center;
       border-bottom: 2px solid rgb(236, 236, 236);
-      width: 45%;
-      margin: 0 auto;
+      width: 55%;
+      
       margin-top: 1.75rem;
     }
     &-name {
@@ -81,8 +83,11 @@
   background: rgba(0, 0, 0, 0.09);
   height: 4rem;
   width: 25rem;
-  margin: 0 auto;
+  margin-left: 8rem;
   margin-top: 2.5rem;
+  &:focus{
+      outline: none;
+  }
 
   &::before,
   &::after {
