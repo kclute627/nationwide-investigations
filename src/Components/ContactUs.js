@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import ReactSVG from "react-svg";
+import phone from "../assets/icons/phone.svg";
+import compass from '../assets/icons/compass.svg';
 
-
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 class ContactUs extends Component {
   state = {
@@ -21,14 +23,13 @@ class ContactUs extends Component {
   };
 
   submitHandler = e => {
-
     fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
     this.setState({
       name: "",
@@ -42,12 +43,7 @@ class ContactUs extends Component {
     return (
       <div className="contactus__container">
         <div className="contactus__header">Contact Us</div>
-        <form
-          
-          className="contactus__contact"
-          
-          onSubmit={this.submitHandler}
-        >
+        <form className="contactus__contact" onSubmit={this.submitHandler}>
           <h1 className="contactus__contact-header">Send Us a Message</h1>
 
           <input
@@ -73,11 +69,17 @@ class ContactUs extends Component {
             value={this.state.message}
             onChange={this.changeHandler}
           ></textarea>
-          <button type='submit' className="btn-1">
+          <button type="submit" className="btn-1">
             <span className="span__btn">Submit</span>
           </button>
           <input type="hidden" name="form-name" value="contact" />
         </form>
+        <div className="contactus__left">
+            
+            <div className="contactus__left-header">Reach Out </div>
+            <a href="tel:3123613598" className="contactus__left-phone"> 312-361-3598</a> <ReactSVG className='phone' src={phone}/>
+            <div  className="contactus__left-address">  >116 W Jackson <br/>#254 <br/>Chicago, IL 60604 </div> <ReactSVG className="compass" src={compass}/>
+        </div>
       </div>
     );
   }
