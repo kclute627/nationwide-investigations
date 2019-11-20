@@ -17,7 +17,7 @@ class ContactUs extends Component {
                     <input type="email" className="contactus__contact-email" placeholder="Email"/>
                     <textarea name="message" className="contactus__contact-message" placeholder="Send Us A Message"></textarea>
                     <button className="btn-1">
-                        <span>
+                        <span className="span__btn">
                             Submit
                         </span>
                             
