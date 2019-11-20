@@ -29,7 +29,7 @@ class ContactUs extends Component {
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
-        
+
     this.setState({
       name: "",
       email: "",
@@ -43,9 +43,9 @@ class ContactUs extends Component {
       <div className="contactus__container">
         <div className="contactus__header">Contact Us</div>
         <form
-          action=""
+          
           className="contactus__contact"
-          method ="post"
+          
           onSubmit={this.submitHandler}
         >
           <h1 className="contactus__contact-header">Send Us a Message</h1>
