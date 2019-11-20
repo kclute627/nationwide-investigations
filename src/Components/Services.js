@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ServicesBox from "./ServiceBox";
+import ServicesBox from "./ServiceBoox";
 import auction from "../assets/icons/auction.svg";
 import library from "../assets/icons/library.svg";
 import mag from "../assets/icons/magnifier.svg";
