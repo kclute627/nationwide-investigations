@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
 class ContactUs extends Component {
   state = {
     name: "",
@@ -14,6 +21,15 @@ class ContactUs extends Component {
   };
 
   submitHandler = e => {
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+        
     this.setState({
       name: "",
       email: "",
@@ -29,6 +45,7 @@ class ContactUs extends Component {
         <form
           action=""
           className="contactus__contact"
+          method ="post"
           onSubmit={this.submitHandler}
         >
           <h1 className="contactus__contact-header">Send Us a Message</h1>
