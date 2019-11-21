@@ -1,148 +1,145 @@
 .homepage {
-  &__btn {
-      display: none;
-      padding: 1.5rem;
-      width: 26rem;
-      background: $color-primary;
-      border: 2px solid #fff;
-      border-radius: 1000px;
-      margin-top: 3rem;
-      font-size: 2rem;
-      cursor: pointer;
-      animation: btn 2s;
-      &:hover{
-          background: $color-primary;
-          border: none;
-      }
+  
 
 
-  }
+
+  
   &__container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: calc(100vh - 15rem);
     overflow: hidden;
-  }
-}
-.btn{
-    &-left{
-        margin-left: 20%;
-        margin-right: 2.5rem;
-        animation-name: btn;
-    }
-    &-rignt{
+    background: url('../../assets/handshake.jpg') no-repeat center center;
 
-    }
-}
+    &-header{
 
-.slide-container {
-  width: 100%;
-  height: 100%;
-  margin: auto;
- 
-  z-index: 1;
-}
-
-h3 {
-  text-align: center;
-}
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: no-repeat center center ;
-  background-size: auto;
-  
-  height: calc(100vh - 15rem)
- 
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
-
-.each-fade {
-  display: flex;
-}
-
-.each-fade .image-container {
-  width: 75%;
-  overflow: hidden;
-}
-
-.each-fade .image-container img {
-  width: 100%;
-}
-
-.each-fade h2 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background: #adceed;
-}
-
-.slide {
-  &__container {
-    &-header {
-      position: relative;
-      bottom: 7rem;
-      right: 17rem;
-      
+      align-self: center;
+      justify-self: center;  
+      margin-top: 3.5rem; 
       
       color: #fff;
+      margin-bottom: 14.5rem;
+      display: flex;
+      flex-direction: column;
       
 
       & h1 {
         font-size: 9rem;
         text-shadow: 1px 1px 1px;
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
       }
       & h4 {
         font-size: 4rem;
         margin-left: 2rem;
       }
-      &-1{
-        position: relative;
-        bottom: 7rem;
-        right: 17rem;
-        color: rgb(255, 255, 255);
-        & h1 {
-            font-size: 9rem;
-            text-shadow: 1px 1px 1px;
-            margin-bottom: -2rem;
-          }
-          & h4 {
-            font-size: 4rem;
-            margin-left: 2rem;
-          }
-      }
-      &-2{
-        position: relative;
-        bottom: 7rem;
-        right: 19rem;
-        color: rgb(255, 255, 255);
-        & h1 {
-            font-size: 9rem;
-            text-shadow: 1px 1px 1px;
-            margin-bottom: -2rem;
-          }
-          & h4 {
-            font-size: 4rem;
-            
-            text-transform: capitalize;
-          }
-      }
+
     }
+
   }
 }
+.btn{
+    &-left{
+   
+      display: inline-block;
+      position: relative;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;    
+      background: rgba(0, 0, 0, 0.30);
+      height: 8rem;
+      width: 25rem;  
+      
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1.5rem;
+      &:focus{
+        outline: none;
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff;
+    }
+    &:hover{
+        background: rgba(0, 0, 0, .6);
+        transition-delay: .3s;
+  
+        &::before,
+        &::after{
+          width: 100%;
+        }
+      }
+      
+    &:hover span::before,
+    &:hover span::after{
+        height: 100%;
+    }
+
+    &::before,
+    &::after{
+        transition-delay: 0.2s;
+    }
+    & span::before,
+    span::after {
+      transition-delay: 0s;
+    }
+    &::before{
+        right: 0;
+  top: 0;
+
+    }
+    &::after{
+        left: 0;
+        bottom: 0;
+
+    }
+  }}
 
 
+.span{
+  &__btn-1{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    color: white;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2px;
+      height: 0;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff;
+    }
+
+  }
+}
+.btn-left span::before {
+  left: 0;
+  top: 0;
+}
+.btn-left span::after {
+  right: 0;
+  bottom: 0;
+}
+.btn-left:hover::before,
+.btn-left:hover::after {
+  transition-delay: 0.3s;
+}
+.btn-left:hover span::before,
+.btn-left:hover span::after {
+  transition-delay: 0.2s;
+}
 
 
 

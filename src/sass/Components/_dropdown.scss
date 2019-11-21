@@ -15,7 +15,7 @@
     }
     &-2 {
         @include dropdown;
-        border-top: 2px solid black;
+        
         
         &:hover{@include dropdownhover }
 
@@ -23,7 +23,7 @@
 
     &-3 {
         @include dropdown;
-        border-top: 2px solid black;
+        
         &:hover{@include dropdownhover }
     }
     &-4{

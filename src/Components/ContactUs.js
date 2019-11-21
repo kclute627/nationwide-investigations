@@ -78,7 +78,7 @@ class ContactUs extends Component {
             
             <div className="contactus__left-header">Reach Out </div>
             <a href="tel:3123613598" className="contactus__left-phone"> 312-361-3598</a> <ReactSVG className='phone' src={phone}/>
-            <div  className="contactus__left-address">  >116 W Jackson <br/>#254 <br/>Chicago, IL 60604 </div> <ReactSVG className="compass" src={compass}/>
+            <div  className="contactus__left-address">  116 W Jackson <br/>#254 <br/>Chicago, IL 60604 </div> <ReactSVG className="compass" src={compass}/>
         </div>
       </div>
     );

@@ -1,0 +1,32 @@
+.decription{
+
+    display: grid;
+    grid-template-rows: 12rem max-content;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    &-header{
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 4rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid $color-primary;
+        width: 45%;
+
+    }
+    &-text{
+        width: 55%;
+        justify-self: center;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 1rem;
+
+        & a{
+            color: inherit;
+        }
+
+    }
+}

@@ -4,6 +4,7 @@ import Homepage from './Homepage'
 import Footer from './Footer';
 import Services from './Services';
 import Members from './Members';
+import Decription from './Decription';
 import ContactUs from './ContactUs';
 
 
@@ -18,6 +19,7 @@ class App extends Component {
       <Navbar
       home = "true"/>
       <Homepage />
+      <Decription/>
       <Services/>
       <ContactUs />
       <Members />
