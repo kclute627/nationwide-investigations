@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Iframe from 'react-iframe';
 
 
 const encode = data => {
@@ -99,9 +100,8 @@ class ContactUs extends Component {
         </form>
 
         <div className="contactus__left">
-        <iframe src={"https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed"} />
-               
-          
+          <Iframe url="https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed"/>
+         
         </div>
       </div>
     );

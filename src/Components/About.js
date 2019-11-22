@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+import Fade from "react-reveal/Fade";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import meeting from "../assets/meeting-7.jpg";
 
 class About extends Component {
   render() {
@@ -29,11 +32,18 @@ class About extends Component {
                 located across Illinois. If you need a criminal investigator,
                 documents copied from a courthouse or legal documents served
                 contact us.{" "}
+              </div>
+
+            </div>
+            <div className="about__container-middle-right">
+              <Fade left>
+                <img src={meeting} alt=""/>
+              </Fade>
               
+
             </div>
-            </div>
-            </div>
-          
+            <Link to='/contact' className="btn-left about__btn"> <span className="span__btn-1">Get A Free Quote</span></Link>   
+          </div>
         </div>
         <Footer />
       </div>

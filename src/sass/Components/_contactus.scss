@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 0.1fr  minmax(60rem, 1fr) minmax(60rem, 1fr) 0.1fr;
     grid-template-rows: auto auto 5rem;
-    background: rgb(197, 197, 197);
+    background: rgb(209, 209, 209);
   }
   &__header {
     grid-column: 1/-1;
