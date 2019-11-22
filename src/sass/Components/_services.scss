@@ -4,10 +4,13 @@
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
     grid-template-rows: auto auto 10rem;
     grid-template-rows: auto auto;
-    background: rgb(255, 255, 255);
-    margin-top: -1rem;
+   
+    
+    background: rgb(226, 226, 226);
+    padding-bottom: 6rem;
   }
   &__header {
+    display: none;
     grid-column: 2/3;
     grid-row: 1/2;
     text-transform: capitalize;
@@ -24,8 +27,9 @@
     display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 5rem;
+    margin-top: 6rem;
     justify-content: space-around;
+
 
     &-box {
       display: grid;

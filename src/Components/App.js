@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Services from './Services';
 import Members from './Members';
 import Decription from './Decription';
-import ContactUs from './ContactUs';
+
 import HomepageBtn from './HomepageBtn';
 
 
@@ -23,7 +23,7 @@ class App extends Component {
       <Decription/>
       <HomepageBtn />
       <Services/>
-      <ContactUs />
+     
       <Members />
       <Footer/>
     </div>

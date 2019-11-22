@@ -71,9 +71,9 @@ class Footer extends Component {
         <div className="footer__bottom">
             <div className="footer__bottom-text">
                 <ReactSvg src={copy}/> 
-                <p className=""> 2019 Nationwide Investigations - <a className="footer__bottom-link" target="blank" href="https://quizzical-mestorf-dc1cba.netlify.com">Site Designed and Powered by Small Business Websites Inc.</a> </p>
-                
-            </div>
+                <p className=""> 2019 Nationwide Investigations - <a className="footer__bottom-link" target="blank" href="https://quizzical-mestorf-dc1cba.netlify.com">Site Designed and Powered by Small Business Websites Inc.</a>
+                 <br/> IL Lic # 117-001790 </p> 
+              </div>
         </div>
       </div>
     );

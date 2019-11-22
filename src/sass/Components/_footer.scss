@@ -1,7 +1,7 @@
 .footer{
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(55rem, 47%) minmax(45rem, 37%) minmax(0, 0.7fr);
-    grid-template-rows: 3rem auto 5rem;
+    grid-template-rows: 3rem auto auto;
     background: rgb(29, 29, 29);
     
 
@@ -210,6 +210,8 @@
         background: rgb(54, 54, 54);
         display: grid;
         grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
+        grid-template-rows: 100%;
+
         justify-content: center;
         align-content: center;
 
@@ -220,6 +222,8 @@
             justify-self: center;
             display: flex;
             color: #fff;
+            
+            text-align: center;;
 
 
 
