@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import ReactSVG from "react-svg";
-import phone from "../assets/icons/phone.svg";
-import compass from '../assets/icons/compass.svg';
+import Map from './Map';
 
 const encode = data => {
   return Object.keys(data)
@@ -42,18 +40,31 @@ class ContactUs extends Component {
   render() {
     return (
       <div className="contactus__container">
-        <div className="contactus__header">Contact Us</div>
+        <div className="contactus__header">Contact</div>
         <form className="contactus__contact" onSubmit={this.submitHandler}>
-          <h1 className="contactus__contact-header">Send Us a Message</h1>
-
-          <input
+        
+          <div className="contactus__contact-1">
+            
+            <input
             type="text"
             className="contactus__contact-name"
-            placeholder="Name"
+            placeholder="First Name"
             name="name"
             value={this.state.name}
             onChange={this.changeHandler}
           />
+           <input
+            type="text"
+            className="contactus__contact-name-2"
+            placeholder="Last Name"
+            name="name"
+            value={this.state.name}
+            onChange={this.changeHandler}
+          />
+
+          </div>
+          <div className="contactus__contact-2">
+             
           <input
             type="email"
             className="contactus__contact-email"
@@ -62,6 +73,18 @@ class ContactUs extends Component {
             value={this.state.email}
             onChange={this.changeHandler}
           />
+          <input
+            type="phone"
+            className="contactus__contact-phone"
+            placeholder="Phone Number"
+            name="phone"
+            value={this.state.email}
+            onChange={this.changeHandler}
+          />
+          </div>
+          
+
+         
           <textarea
             name="message"
             className="contactus__contact-message"
@@ -74,11 +97,11 @@ class ContactUs extends Component {
           </button>
           <input type="hidden" name="form-name" value="contact" />
         </form>
+
+
         <div className="contactus__left">
-            
-            <div className="contactus__left-header">Reach Out </div>
-            <a href="tel:3123613598" className="contactus__left-phone"> 312-361-3598</a> <ReactSVG className='phone' src={phone}/>
-            <div  className="contactus__left-address">  116 W Jackson <br/>#254 <br/>Chicago, IL 60604 </div> <ReactSVG className="compass" src={compass}/>
+          <Map />
+           
         </div>
       </div>
     );
