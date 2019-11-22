@@ -6,6 +6,7 @@ import Services from './Services';
 import Members from './Members';
 import Decription from './Decription';
 import ContactUs from './ContactUs';
+import HomepageBtn from './HomepageBtn';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
       home = "true"/>
       <Homepage />
       <Decription/>
+      <HomepageBtn />
       <Services/>
       <ContactUs />
       <Members />

@@ -4,6 +4,7 @@
     grid-template-rows: 12rem max-content;
     grid-template-columns: 1fr;
     align-items: center;
+    margin-bottom: 5rem;
 
     &-header{
         grid-row: 1/2;
@@ -23,6 +24,7 @@
         letter-spacing: 1px;
         text-align: center;
         margin-top: 1rem;
+       
 
         & a{
             color: inherit;
