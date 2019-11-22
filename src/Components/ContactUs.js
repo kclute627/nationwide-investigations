@@ -10,8 +10,10 @@ const encode = data => {
 class ContactUs extends Component {
   state = {
     name: "",
+    last: "",
     email: "",
-    message: ""
+    message: "",
+    phone: '',
   };
 
   changeHandler = event => {
@@ -32,7 +34,9 @@ class ContactUs extends Component {
     this.setState({
       name: "",
       email: "",
-      message: ""
+      message: "",
+      last: '',
+      phone: '',
     });
     e.preventDefault();
   };
@@ -55,8 +59,8 @@ class ContactUs extends Component {
               type="text"
               className="contactus__contact-name-2"
               placeholder="Last Name"
-              name="name"
-              value={this.state.name}
+              name="last"
+              value={this.state.last}
               onChange={this.changeHandler}
             />
           </div>
@@ -70,12 +74,14 @@ class ContactUs extends Component {
               onChange={this.changeHandler}
             />
             <input
-              type="phone"
+              type="tel"
               className="contactus__contact-phone"
               placeholder="Phone Number"
               name="phone"
-              value={this.state.email}
+              value={this.state.phone}
               onChange={this.changeHandler}
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
             />
           </div>
 

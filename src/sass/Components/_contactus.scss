@@ -97,22 +97,16 @@
     }
   }
   &__left {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-self: end;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 15rem 30rem;
-    align-items: end;
-    margin-right: 6.5rem;
+    
     position: absolute;
 
     & iframe{
       position: relative;
       height: 40rem;
       width: 55rem;
-      top: 60rem;
-      right: 53rem;
+      top: 30rem;
+      left: 18rem;
+      
     }
 
 
