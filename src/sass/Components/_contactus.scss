@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 0.1fr 70rem minmax(60rem, 1fr) 0.1fr;
     grid-template-rows: auto auto 5rem;
-    background: rgb(230, 230, 230);
+    background: rgb(197, 197, 197);
   }
   &__header {
     grid-column: 1/-1;
@@ -105,8 +105,21 @@
     grid-template-rows: 10rem 15rem 30rem;
     align-items: end;
     margin-right: 6.5rem;
+    position: absolute;
+
+    & iframe{
+      position: relative;
+      height: 40rem;
+      width: 55rem;
+      top: 60rem;
+      right: 53rem;
+    }
+
 
   }
+}
+.maprouter{
+ top: 415rem;
 }
 
 .btn-1 {

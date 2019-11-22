@@ -42,49 +42,43 @@ class ContactUs extends Component {
       <div className="contactus__container">
         <div className="contactus__header">Contact</div>
         <form className="contactus__contact" onSubmit={this.submitHandler}>
-        
           <div className="contactus__contact-1">
-            
             <input
-            type="text"
-            className="contactus__contact-name"
-            placeholder="First Name"
-            name="name"
-            value={this.state.name}
-            onChange={this.changeHandler}
-          />
-           <input
-            type="text"
-            className="contactus__contact-name-2"
-            placeholder="Last Name"
-            name="name"
-            value={this.state.name}
-            onChange={this.changeHandler}
-          />
-
+              type="text"
+              className="contactus__contact-name"
+              placeholder="First Name"
+              name="name"
+              value={this.state.name}
+              onChange={this.changeHandler}
+            />
+            <input
+              type="text"
+              className="contactus__contact-name-2"
+              placeholder="Last Name"
+              name="name"
+              value={this.state.name}
+              onChange={this.changeHandler}
+            />
           </div>
           <div className="contactus__contact-2">
-             
-          <input
-            type="email"
-            className="contactus__contact-email"
-            placeholder="Email"
-            name="email"
-            value={this.state.email}
-            onChange={this.changeHandler}
-          />
-          <input
-            type="phone"
-            className="contactus__contact-phone"
-            placeholder="Phone Number"
-            name="phone"
-            value={this.state.email}
-            onChange={this.changeHandler}
-          />
+            <input
+              type="email"
+              className="contactus__contact-email"
+              placeholder="Email"
+              name="email"
+              value={this.state.email}
+              onChange={this.changeHandler}
+            />
+            <input
+              type="phone"
+              className="contactus__contact-phone"
+              placeholder="Phone Number"
+              name="phone"
+              value={this.state.email}
+              onChange={this.changeHandler}
+            />
           </div>
-          
 
-         
           <textarea
             name="message"
             className="contactus__contact-message"
@@ -98,10 +92,10 @@ class ContactUs extends Component {
           <input type="hidden" name="form-name" value="contact" />
         </form>
 
-
         <div className="contactus__left">
-          <Map />
-           
+        <iframe src={"https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed"} />
+               
+          
         </div>
       </div>
     );

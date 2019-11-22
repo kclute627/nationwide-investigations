@@ -1,23 +1,17 @@
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper } from "google-maps-react";
+
 
 class Maps extends Component {
   render() {
     return (
-      <Map
-        className="map"
-        google={this.props.google}
-        zoom={14}
+                 
+                <iframe src={"https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed"} >
+                </iframe>
+           
         
-        initialCenter={{
-          lat: -1.2884,
-          lng: 36.8233
-        }}
-      />
+     
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCCBYfUuvZBCZVO7y7SH2ZJoBuxMD3A9_g"
-})(Maps);
+export default Maps;
