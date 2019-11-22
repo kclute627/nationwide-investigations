@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Map from './Map';
+
 
 const encode = data => {
   return Object.keys(data)
