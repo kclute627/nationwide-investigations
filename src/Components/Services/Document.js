@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Navbar from "../Navbar";
 import court from "../../assets/court.jpg";
 import Footer from "../Footer";
-import man from '../../assets/man.png';
+import man from '../../assets/man.jpg';
 
 class Document extends Component {
   render() {
