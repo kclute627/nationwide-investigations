@@ -10,8 +10,14 @@ class Investigations extends Component{
 
         return(
             <div className="investigations__container">
-                <Navbar services="true"/>
-                <Footer/>
+                <Navbar services="true" />
+                <div className="investigations__middle">
+                    <div className="investigations__middle-top">
+                        
+                    </div>
+                </div>
+
+                <Footer />
             </div>
         )
     }

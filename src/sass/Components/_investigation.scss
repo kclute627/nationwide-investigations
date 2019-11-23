@@ -1,0 +1,31 @@
+.investigations{
+
+
+
+    &__middle{
+        display: grid;
+        grid-template-columns: minmax(0,25rem) minmax(50rem, 45%) minmax(50rem, 45%) minmax(0,25rem);
+        grid-template-rows: 20rem 25rem 25rem;
+
+        &-top{
+            grid-column: 1/-1;;
+            grid-row: 1/2;
+            background-image: url('../../assets/Camara_lens.jpg');
+            background-position: center;
+            height: 100%;
+            width: 100%;
+
+            &-text{
+                
+                font-size: 8.2rem;
+                margin-top: 3.5rem;
+                color: #fff;
+                text-align: center;
+
+               
+
+            }
+
+        }
+    }
+}
