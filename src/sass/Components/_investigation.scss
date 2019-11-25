@@ -5,7 +5,7 @@
         50rem,
         45%
       ) minmax(0, 25rem);
-    grid-template-rows: 20rem 25rem 25rem;
+    grid-template-rows: 20rem auto 45rem;
 
     &-top {
       grid-column: 1/-1;
@@ -23,9 +23,35 @@
       }
     }
     &-box {
+        &-3{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            margin-top: -14.5rem;
+        
+        
+            &-header{
+                border-bottom: 2px solid $color-primary;
+              text-transform: capitalize;
+              text-align: center;
+              margin: 0 auto;
+              font-size: 3.5rem;
+              width: 50rem;
+              font-weight: 700;
+              margin-top: 2.5rem;
+          }
+          &-text{
+               
+            width: 75%;
+            text-align: justify;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+
+          }
+        }
       &-1 {
         grid-column: 2/3;
         grid-row: 2/3;
+        
 
         &-header {
           border-bottom: 2px solid $color-primary;
@@ -36,6 +62,13 @@
           width: 50rem;
           font-weight: 700;
           margin-top: 2.5rem;
+        }
+        &-text{
+            
+            width: 75%;
+            text-align: justify;
+            margin: 0 auto;
+            margin-top: 2.5rem;
         }
       }
       &-2 {
@@ -52,8 +85,38 @@
           font-weight: 700;
           margin-top: 2.5rem;
         }
-      }
+        &-text{
+            margin: 0 auto; 
+            width: 75%;
+            margin-top: 2.5rem;
 
-    }
+            & ul{
+                list-style-type: none;
+                margin-top: 1.5rem;
+                text-transform: capitalize;
+                display: grid;
+                grid-template-columns:4rem auto;
+                grid-template-rows: repeat(5, 2.4em);
+                align-content: center;
+                align-items: center;
+
+                & svg{
+                    fill: $color-primary;
+                    height: 4em;
+                    width: 4rem;
+                    margin-top: 1.5rem;
+                }
+                & li{
+                    margin-left: 2rem;
+                }
+
+            }
+        }
+      }
+      
+}
+
+    
   }
 }
+
