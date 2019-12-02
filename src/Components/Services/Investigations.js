@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import ReactSvg from "react-svg";
+import Fade from "react-reveal/Fade";
 import check from "../../assets/icons/check.svg";
+import investigations from '../../assets/investigation.jpg';
 
 class Investigations extends Component {
   render() {
@@ -56,11 +58,11 @@ class Investigations extends Component {
               us today for a free quote. A sample of the civil investigations we
               preform are listed below.
               <ul>
-                <li>Locating and Interviewing Witnesses</li>
-                <li>Service of Process </li>
-                <li>Serving Subpoenas </li>
-                <li>locating Assets </li>
-                <li> Obtaining Court Records </li>
+              <ReactSvg src={check}/> <li>Locating and Interviewing Witnesses</li>
+              <ReactSvg src={check} /> <li>Service of Process </li>
+              <ReactSvg src={check} />  <li>Serving Subpoenas </li>
+              <ReactSvg src={check} />  <li>locating Assets </li>
+              <ReactSvg src={check} /> <li> Obtaining Court Records </li>
               </ul>
             </div>
             <div className="investigations__middle-box-3-header">
@@ -83,6 +85,12 @@ class Investigations extends Component {
               for your case and also give you an investigative timeline. We
               strive to keep you up to date on the progress of your case.
             </div>
+          </div>
+          <div className="investigations__middle-image">
+              <Fade bottom>
+                  <img src={investigations} alt=""/>
+              </Fade>
+              
           </div>
         </div>
 

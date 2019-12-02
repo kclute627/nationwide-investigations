@@ -112,10 +112,11 @@ class ContactUs extends Component {
 
         <div className="contactus__left">
           <div className="spinner">
-            <ClipLoader sizeUnit={"px"} size={100} color={"#009adb"} />
+         <ClipLoader sizeUnit={"px"} size={100} color={"#009adb"} />
+          { map   }
           </div>
 
-          {!this.state.loading ? map : null}
+         
         </div>
       </div>
     );
