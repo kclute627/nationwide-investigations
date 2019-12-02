@@ -8,6 +8,7 @@
     "react": "^16.10.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
     "react-iframe": "^1.8.0",
     "react-loading-spinkit": "^0.1.8",
     "react-reveal": "^1.2.2",
