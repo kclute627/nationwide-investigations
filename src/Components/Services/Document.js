@@ -6,6 +6,10 @@ import Footer from "../Footer";
 import man from '../../assets/man.jpg';
 
 class Document extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
   render() {
     return (
       <div className="document__container">

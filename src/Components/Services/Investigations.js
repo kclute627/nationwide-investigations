@@ -7,6 +7,12 @@ import check from "../../assets/icons/check.svg";
 import investigations from '../../assets/investigation.jpg';
 
 class Investigations extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+
   render() {
     return (
       <div className="investigations__container">

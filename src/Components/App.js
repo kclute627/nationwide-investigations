@@ -21,7 +21,7 @@ class App extends Component {
             name="keywords"
             content="Process Server, Chicago process Server, process serving, Illinois Process Server, Same-day Process Service"
           />
-          <meta name='description' content='We offer Same-Day Process Service in Chicago, IL'/>
+          <meta name='description' content='We offer Same-Day Process Service in Chicago, IL.'/>
           <title>Chicago Illinois Process Server - ASAP Rush Serve</title>
          
         </Helmet>
