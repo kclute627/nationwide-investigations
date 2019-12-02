@@ -5,7 +5,7 @@
         50rem,
         45%
       ) minmax(0, 25rem);
-    grid-template-rows: 20rem auto 45rem;
+    grid-template-rows: 20rem auto auto;
 
     &-top {
       grid-column: 1/-1;

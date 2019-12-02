@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Iframe from 'react-iframe';
-
+import Iframe from "react-iframe";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const encode = data => {
   return Object.keys(data)
@@ -14,8 +14,11 @@ class ContactUs extends Component {
     last: "",
     email: "",
     message: "",
-    phone: '',
+    phone: "",
+    loading: true
   };
+
+  componentDidMount() {}
 
   changeHandler = event => {
     this.setState({
@@ -36,13 +39,21 @@ class ContactUs extends Component {
       name: "",
       email: "",
       message: "",
-      last: '',
-      phone: '',
+      last: "",
+      phone: ""
     });
     e.preventDefault();
   };
 
   render() {
+    let map = (
+      <Iframe url="https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed" />
+    );
+
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 2000);
+
     return (
       <div className="contactus__container">
         <div className="contactus__header">Contact</div>
@@ -100,8 +111,11 @@ class ContactUs extends Component {
         </form>
 
         <div className="contactus__left">
-          <Iframe url="https://maps.google.com/maps?q=116%20w%20jackson&t=&z=13&ie=UTF8&iwloc=&output=embed"/>
-         
+          <div className="spinner">
+            <ClipLoader sizeUnit={"px"} size={100} color={"#009adb"} />
+          </div>
+
+          {!this.state.loading ? map : null}
         </div>
       </div>
     );

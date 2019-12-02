@@ -54,15 +54,43 @@ class Investigations extends Component {
               for your case and also give you an investigative timeline. We
               strive to keep you up to date on the progress of your case.
             </div>
-            <div className="investigations__middle-box-3-header">Cost</div>
-            <div className="investigations__middle-box-3-text">
-              Call for a detailed cost on your investigation, but generally
-              speaking investigations start at $145.00 an hour. If you have a
-              case that requires an investigator please call us for a free case
-              evaluation. A private investigator will be able to set up a budget
-              for your case and also give you an investigative timeline. We
-              strive to keep you up to date on the progress of your case.
+            <div className="investigations__middle-box-3-header">
+              Civil Investigations
             </div>
+            <div className="investigations__middle-box-3-text">
+              Our dedicated and trained private investigators have handled
+              hundreds of Civil Investigations in and around the Chicago, IL
+              area. We primarily work with attorneys and law firms, but contact
+              us today for a free quote. A sample of the civil investigations we
+              preform are listed below.
+              <ul>
+                  <li>Locating and Interviewing Witnesses</li>
+                  <li>Service of Process </li>
+                  <li>Serving Subpoenas </li>
+                  <li>locating Assets </li>
+                  <li> Obtaining Court Records </li>
+                  
+              </ul>
+            </div>
+            <div className="investigations__middle-box-3-header">
+              Civil Investigations
+            </div>
+            <div className="investigations__middle-box-3-text">
+              Our dedicated and trained private investigators have handled
+              hundreds of Civil Investigations in and around the Chicago, IL
+              area. We primarily work with attorneys and law firms, but contact
+              us today for a free quote. A sample of the civil investigations we
+              preform are listed below.
+              <ul>
+                  <li>Locating and Interviewing Witnesses</li>
+                  <li>Service of Process </li>
+                  <li>Serving Subpoenas </li>
+                  <li>locating Assets </li>
+                  <li> Obtaining Court Records </li>
+                  
+              </ul>
+            </div>
+            
           </div>
         </div>
 

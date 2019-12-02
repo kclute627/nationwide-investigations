@@ -96,15 +96,17 @@
     }
   }
   &__left {
+
+
     
     position: absolute;
 
     & iframe{
       position: relative;
       height: 40rem;
-      width: 55rem;
-      top: 24rem;
-      left: 28rem;
+      width: 55rem;     
+      left: 33rem;
+      top: 12rem;
       
     }
 
@@ -207,5 +209,18 @@
 .btn-1:hover span::before,
 .btn-1:hover span::after {
   transition-delay: 0.2s;
+}
+
+.spinner {
+
+  position: relative;
+  top: 35rem;
+  left: 59rem;
+     
+      
+
+     
+
+
 }
 
