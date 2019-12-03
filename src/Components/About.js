@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 import Fade from "react-reveal/Fade";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -9,6 +10,16 @@ class About extends Component {
   render() {
     return (
       <div className="about">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+            name="keywords"
+            content="Document Retrieval, Court FIling Chicago, Courtesy Copy Delivery, Certificate of Good Standing Illinois, Chicago IL Document Retrieval"
+          />
+          <meta name='description' content='About Us Nationwide Investigations Inc Chicago IL Process Server'/>
+          <title>About US || Nationwide Investigations Inc || Chicago Process Server</title>
+         
+        </Helmet>
         <Navbar about />
         <div className="about__container">
           <div className="about__container-top">

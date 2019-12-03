@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
+import {Helmet} from 'react-helmet';
 import Navbar from "../Navbar";
 import court from "../../assets/court.jpg";
 import Footer from "../Footer";
@@ -13,6 +14,16 @@ class Document extends Component {
   render() {
     return (
       <div className="document__container">
+         <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+            name="keywords"
+            content="Document Retrieval, Court FIling Chicago, Courtesy Copy Delivery, Certificate of Good Standing Illinois, Chicago IL Document Retrieval"
+          />
+          <meta name='description' content='Document Retrieval | E-Filing Cook County Illinois and Nationwide'/>
+          <title>Document Retrieval | E-Filing Cook County Illinois and Nationwide</title>
+         
+        </Helmet>
         <Navbar services="true" />
         <div className="document-top">
           <div className="document-top-text"></div>

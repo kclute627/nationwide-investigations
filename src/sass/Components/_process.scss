@@ -1,0 +1,92 @@
+.process {
+  &__container {
+  }
+  &__middle {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 20rem auto auto;
+
+    &-top{
+      grid-column: 1/-1;;
+      grid-row: 1/2;
+      background-image: url("../../assets/Camara_lens.jpg");
+      background-position: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-1 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+
+      &-header {
+        border-bottom: 2px solid $color-primary;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 3.5rem;
+        width: 40rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+      }
+      &-text{
+        width: 75%;
+        text-align: justify;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+      }
+    }
+    &-2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+        &-header{
+            border-bottom: 2px solid $color-primary;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 3.5rem;
+        width: 40rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+
+        }
+        &-text{
+            width: 75%;
+            text-align: justify;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+            
+            & ul{
+                list-style-type: none;
+                display: grid;
+            grid-template-columns: 7rem auto;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+
+              & li {
+                font-size: 2rem;
+                margin-bottom: 3.5rem;
+                text-transform: capitalize;
+
+              } & span{
+                font-size: 2rem;
+                font-weight: 700;
+              }
+
+                & svg {
+                    fill: $color-primary;
+                    height: 4rem;
+                    width:4rem;
+                    margin-bottom: 3.5rem;
+                  
+                }
+
+            }
+
+        }
+    }
+  }
+}
