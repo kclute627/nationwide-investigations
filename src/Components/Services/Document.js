@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Fade from 'react-reveal/Fade';
 import {Helmet} from 'react-helmet';
 import Navbar from "../Navbar";
-import court from "../../assets/court.jpg";
+
 import Footer from "../Footer";
 import man from '../../assets/man.jpg';
 
