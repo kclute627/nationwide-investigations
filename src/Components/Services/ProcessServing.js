@@ -19,7 +19,7 @@ class ProcessServing extends Component {
           <meta charSet="utf-8" />
           <meta
             name="keywords"
-            content="Document Retrieval, Court FIling Chicago, Courtesy Copy Delivery, Certificate of Good Standing Illinois, Chicago IL Document Retrieval"
+            content="process server, chicago process server, illinois process server, chicago, IL process server, process server in Chicago, Document Retrieval, Court FIling Chicago, Courtesy Copy Delivery, Certificate of Good Standing Illinois, Chicago IL Document Retrieval"
           />
           <meta
             name="description"
