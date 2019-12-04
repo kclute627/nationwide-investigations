@@ -6,6 +6,18 @@
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: 20rem auto auto;
 
+
+    &-img{
+      grid-column: 3/5;
+      grid-row: 3/5;
+      align-self: end;
+      justify-self: end;
+      & img {
+        height: 70rem;
+        width: 110rem;
+      }
+    }
+
     &-top{
       grid-column: 1/-1;;
       grid-row: 1/2;
@@ -122,6 +134,7 @@
       grid-column: 2/3;
       grid-row: 4/5;
       margin-bottom: 2.5rem;
+      justify-self: end;
 
       &-header {
         border-bottom: 2px solid $color-primary;
@@ -140,5 +153,7 @@
         margin-top: 2.5rem;
       }
     }
+
+   
   }
 }

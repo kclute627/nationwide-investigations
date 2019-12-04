@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
+import Fade from "react-reveal/Fade";
+import people from "../../assets/people.png";
 import ReactSvg from "react-svg";
 import check from "../../assets/icons/check.svg";
 import Navbar from "../Navbar";
@@ -30,6 +32,7 @@ class ProcessServing extends Component {
         <Navbar services="true" />
         <div className="process__middle">
           <div className="process__middle-top"></div>
+
           <div className="process__middle-1">
             <h3 className="process__middle-1-header"> Process Serving </h3>
             <div className="process__middle-1-text">
@@ -101,9 +104,11 @@ class ProcessServing extends Component {
               of the Chicago Metro area please call us for a detailed price
               quote.
             </div>
-            <div className="process__middle-img">
-
-            </div>
+          </div>
+          <div className="process__middle-img">
+            <Fade bottom delay={700}>
+              <img src={people} alt="Chicago Process Servers" />
+            </Fade>
           </div>
         </div>
         <Members />
