@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import ReactSvg from 'react-svg';
-import check from '../../assets/icons/check.svg';
+import ReactSvg from "react-svg";
+import check from "../../assets/icons/check.svg";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Members from "../Members";
@@ -47,15 +47,64 @@ class ProcessServing extends Component {
           <div className="process__middle-2">
             <h3 className="process__middle-2-header"> Types of Service </h3>
             <div className="process__middle-2-text">
-            <ul>
-                <ReactSvg src={check} /> <li> <span> Routine Service</span> - First attempt made within 72 hours</li>
-                <ReactSvg src={check} /> <li><span>Rush Service</span> - first attempt made within 24 hours</li>
-                <ReactSvg src={check} /> <li><span> ASAP Same Day Service</span> - attempted same day - please call to make sure we can accommodate</li>
-                
+              <ul>
+                <ReactSvg src={check} />{" "}
+                <li>
+                  {" "}
+                  <span> Routine Service</span> - First attempt made within 72
+                  hours
+                </li>
+                <ReactSvg src={check} />{" "}
+                <li>
+                  <span>Rush Service</span> - first attempt made within 24 hours
+                </li>
+                <ReactSvg src={check} />{" "}
+                <li>
+                  <span> ASAP Same Day Service</span> - attempted same day -
+                  please call to make sure we can accommodate
+                </li>
               </ul>
             </div>
           </div>
+          <div className="process__middle-3">
+            <h3 className="process__middle-3-header"> Other Services </h3>
+            <div className="process__middle-3-text">
+              <div className="process__middle-3-text-1">
+                <span> Skip Trace </span> - If you have a witness or defendant
+                you cannot locate, we have trained skip-tracers who will be able
+                to track down the individual. We use the latest technology as
+                well as good old fashion investigation to locate the target.
+              </div>
+              <div className="process__middle-3-text-1">
+                <span> Court Filing / E-filing </span> - If your company has
+                documents that need to be filed at a local courthouse give us a
+                call. We have intimate knowledge of all the courthouses in
+                Illinois and will be able to get your pleadings filed.
+              </div>
+              <div className="process__middle-3-text-1">
+                <span> Nationwide Process Serving </span> - We work with many
+                process servers from California to New York and no matter where
+                your papers need to be served we can get them done. If you have
+                documents that need to be served outside of Illinois give us a
+                call. We can assign to our many process servers across the
+                country to ensure your papers are served.
+              </div>
+            </div>
+          </div>
+          <div className="process__middle-4">
+            <h3 className="process__middle-4-header"> Price </h3>
+            <div className="process__middle-4-text">
+              Call for a detailed cost on your paper, but generally speaking
+              papers in the Chicago area start at $59.00 and go up. We have
+              agents across the state of Illinois and can handle service of
+              process across the state of Illinois. If you have a paper outside
+              of the Chicago Metro area please call us for a detailed price
+              quote.
+            </div>
+            <div className="process__middle-img">
 
+            </div>
+          </div>
         </div>
         <Members />
         <Footer />
