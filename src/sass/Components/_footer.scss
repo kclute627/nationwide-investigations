@@ -14,6 +14,11 @@
         align-content: flex-start;
         margin-bottom: 5rem;
 
+        @include respond(phoneLarge) {
+            margin-right: 5rem;
+            
+          }
+
         &-1{
             display: flex;
             flex-direction: column;
@@ -31,10 +36,20 @@
             margin-left: 4rem;
             width: 50%;
 
+            @include respond(phoneLarge) {
+                width: 75%;
+                
+              }
+
             &-1{
                 color: inherit;
                 text-align: center;
                 margin-left: 4rem;
+
+                @include respond(phoneLarge) {
+                    font-size: 1.3rem;;
+                    
+                  }
 
                 & a{
                     color: inherit;
@@ -70,13 +85,20 @@
         justify-self: center;
         
         margin-left: 1rem;
+
+        @include respond(phoneLarge) {
+            flex-direction: column;
+            
+          }
         
         
        
         
         
 
-
+&-1{
+    display: flex;
+}
         &-logo{
             height: 12rem;
             width: 25rem;

@@ -13,6 +13,7 @@ class Footer extends Component {
       <div className="footer">
         <div className="footer__right">
           <img src={logo} alt="" className="footer__right-logo" />
+          <div className="footer__right-1">
           <a
             href="https://www.facebook.com/chicago.background.investigations"
             target="blank"
@@ -45,6 +46,12 @@ class Footer extends Component {
             {" "}
             <ReactSvg src={insta} />
           </a>
+
+
+
+
+          </div>
+          
         </div>
         <div className="footer__left">
           <div className="footer__left-1">
