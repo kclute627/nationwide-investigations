@@ -4,8 +4,7 @@
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
     grid-template-rows: auto auto 10rem;
     grid-template-rows: auto auto;
-   
-    
+
     background: rgb(226, 226, 226);
     padding-bottom: 6rem;
   }
@@ -30,17 +29,40 @@
     margin-top: 6rem;
     justify-content: space-around;
 
+    @include respond(laptopSmall) {
+      justify-content: start;
+    }
 
     &-box {
       display: grid;
       grid-template-rows: 12rem 7rem 29rem 3rem;
       grid-template-columns: 31rem;
 
+      @include respond(laptop) {
+        margin-right: 7rem;
+      }
+      @include respond(laptopSmall) {
+        grid-template-rows: 12rem 7rem auto 3rem;
+        margin-right: 0;
+      }
+
       &:first-child {
         margin-left: 15rem;
+
+        @include respond(laptop) {
+        }
+        @include respond(laptopSmall) {
+          margin: 0;
+        }
       }
       &:last-child {
         margin-right: 15rem;
+
+        @include respond(laptop) {
+        }
+        @include respond(laptopSmall) {
+          margin: 0;
+        }
       }
 
       &-icon {
@@ -83,7 +105,14 @@
         font-size: 1.7rem;
         margin-top: 1.5rem;
         text-align: justify;
-        letter-spacing: .2px;
+        letter-spacing: 0.2px;
+
+        @include respond(laptop) {
+          margin: 0 auto;
+        }
+        @include respond(laptopSmall) {
+          display: none;
+        }
       }
       &-btn {
         grid-row: 4/5;
@@ -95,7 +124,7 @@
         &-1 {
           border-radius: 1000px;
           padding: 1rem;
-          
+
           width: 19rem;
           color: #fff;
           background: $color-primary;
@@ -104,17 +133,16 @@
           cursor: pointer;
           font-size: 2rem;
           box-shadow: none;
-          transition: all .3s;
-          &:hover{
+          transition: all 0.3s;
+          &:hover {
             transform: scale(1.1) translateY(-2px);
             box-shadow: 2px 2px 2px 2px rgba(5, 5, 5, 0.24);
-            background: darken($color-primary,10%);
+            background: darken($color-primary, 10%);
           }
-          &:active{
+          &:active {
             transform: scale(1) translateY(0);
             box-shadow: 1px 1px 1px 1px rgba(5, 5, 5, 0.24);
-            background: darken($color-primary,10%);
-
+            background: darken($color-primary, 10%);
           }
         }
       }

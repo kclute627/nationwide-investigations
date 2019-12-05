@@ -11,7 +11,15 @@ import down from '../assets/icons/down.svg';
 class Navbar extends Component {
     state={
         hover: false,
+        phoneClicked: false,
     }
+
+      
+     
+
+    componentWillUnmount() {
+      
+  }
 
     hoverHandler = ()=> {
         if(!this.state.hover){
@@ -26,7 +34,37 @@ class Navbar extends Component {
        
     }
 
+    clickHandler = () => {
+
+      this.setState({
+        phoneClicked: !this.state.phoneClicked,
+      })
+    }
+
   render() {
+    if(this.state.phoneClicked){
+      document.body.style.overflow = 'hidden';
+    } 
+    
+    if(!this.state.phoneClicked){
+      document.body.style.overflow = 'unset';
+    }
+
+    const phoneNav = (
+      <div 
+      className="phone__nav"
+      onClick={this.clickHandler}>
+        <div className={this.state.phoneClicked ? "phone__nav-1 transition-3 " : "phone__nav-1"}></div>
+        <div className={this.state.phoneClicked ? "phone__nav-2 transition-1" : "phone__nav-2"}></div>
+        <div className={this.state.phoneClicked ? "phone__nav-3 transition-2" : "phone__nav-3"}></div>
+      </div>
+    );
+
+    const phoneMenu = (
+      <div className="phoneMenu">
+        
+      </div>
+    )
 
   const {home, about, services, contact} = this.props;
     return (
@@ -48,7 +86,10 @@ class Navbar extends Component {
           >
             <img src={logo} alt="" />
           </Link>
+          {phoneNav}
+          {this.state.phoneClicked ? phoneMenu : null}
           <div className="navbar__bottom-nav">
+            
             <ul>
               <li className="navbar__bottom-nav-list">
                 <Link className = { home ? "navbar__bottom-nav-list-item highlight" : "navbar__bottom-nav-list-item" } to="/">Home</Link>

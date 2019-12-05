@@ -12,9 +12,15 @@
       grid-row: 3/5;
       align-self: end;
       justify-self: end;
+      
       & img {
         height: 70rem;
         width: 110rem;
+        @include respond(laptop){
+          height: 70rem;
+          width: 80rem;
+          margin-bottom: 15rem;
+        }
       }
     }
 

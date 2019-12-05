@@ -27,10 +27,22 @@
         font-size: 9rem;
         text-shadow: 1px 1px 1px;
         margin-bottom: -3rem;
+
+        @include respond(laptopSmall){
+         font-size: 6rem;
+
+      }
+
       }
       & h4 {
         font-size: 4rem;
         margin-left: 2rem;
+        
+        @include respond(laptopSmall){
+          font-size: 3rem;
+          margin-left: -1rem;
+ 
+       }
       }
 
     }

@@ -142,9 +142,17 @@
         
         margin-top: 10rem;
         margin-left: 10rem;
+        @include respond(laptop){
+         margin-left: 0;
+        }
         & img{
             height: 60rem;
             width: 70rem;
+
+            @include respond(laptop){
+              height: 60rem;
+            width: 60rem;
+             }
         }
 
     }

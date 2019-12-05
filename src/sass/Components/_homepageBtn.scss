@@ -5,6 +5,11 @@
     grid-template-columns: 75% 1fr;
     grid-template-rows: 60rem;
 
+    @include respond(laptopSmall){
+        grid-template-columns: 100% ;
+        
+    }
+
 
     &__left{
         grid-column: 1/2;
@@ -22,6 +27,11 @@
         
         justify-content: center;
 
+        @include respond(laptopSmall){
+            grid-column: 1/2;
+            
+        }
+
         &-box{
             width: 35rem;
             
@@ -31,6 +41,17 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 8rem  auto 5rem ;
+
+            @include respond(laptopSmall){
+               align-self: end;
+               margin-right: 4rem;
+                
+            }
+
+            @include respond(laptop){
+                margin-left: -17rem;
+    
+            }
 
 
 

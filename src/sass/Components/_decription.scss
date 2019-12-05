@@ -16,6 +16,12 @@
         border-bottom: 2px solid $color-primary;
         width: 45%;
 
+        @include respond(laptop){
+            width: 55%;
+            font-size: 3rem;
+
+        }
+
     }
     &-text{
         width: 55%;
@@ -24,6 +30,9 @@
         letter-spacing: 1px;
         text-align: center;
         margin-top: 1rem;
+        @include respond(laptop){
+            width: 65%;
+        }
        
 
         & a{
