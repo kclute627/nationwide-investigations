@@ -3,6 +3,12 @@
     grid-template-columns: minmax(0, 0.7fr) minmax(55rem, 47%) minmax(45rem, 37%) minmax(0, 0.7fr);
     grid-template-rows: 3rem auto auto;
     background: rgb(29, 29, 29);
+
+    @include respond(phoneLarge) {
+        grid-template-columns: minmax(0, 0.7fr) minmax(35rem, 47%) minmax(35rem, 47%) minmax(0, 0.7fr);
+        
+      }
+
     
 
     &__left{
