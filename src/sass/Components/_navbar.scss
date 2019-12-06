@@ -1,10 +1,12 @@
 .navbar {
   display: grid;
   grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-  grid-template-rows: 3rem auto;
+  grid-template-rows: auto auto;
   
  
- 
+  @media(max-width: 465px){
+    
+  }
   
   
   
@@ -14,7 +16,11 @@
     background: rgb(53, 53, 53);
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-    grid-template-rows: 3rem;
+    grid-template-rows: auto;
+
+    @media(max-width: 522px){
+      
+    }
     
     
    
@@ -24,6 +30,14 @@
       align-content: center;
       align-items: center;
       margin-left: 7rem;
+      @media(max-width: 522px){
+      display: grid;
+      grid-template-columns: 3rem max-content;
+      grid-template: auto auto;
+      }
+      @media(max-width: 385px){
+        margin-left: 2rem;
+        }
 
       &-number {
         color: rgb(255, 255, 255);
@@ -39,6 +53,8 @@
         height: 2rem;
         width: 2rem;
         padding-bottom: .9rem;
+
+      
       }
     }
   }
@@ -51,6 +67,10 @@
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
     height: 12rem;
+
+    @media(max-width: 465px){
+    height: 8rem;
+    }
 
     
 
@@ -66,7 +86,7 @@
       cursor: inherit;
       
 
-      & img {
+      &-1 {
         max-width: 29rem;
         height: 12rem;
         margin-left: 5rem;
@@ -74,6 +94,24 @@
 
         @include respond(phoneLarge) {
          
+        }
+
+        @media(max-width: 465px){
+          display: none;
+        }
+      }
+      &-2{
+        display: none;
+
+        @media(max-width: 465px){
+        display:inline ;
+        max-width: 29rem;
+        height: 7rem;
+        margin-left: 5rem;
+        margin-top: .5rem;
+        
+        cursor: pointer;
+          
         }
       }
     }
@@ -180,6 +218,35 @@
 
       
   }
+  @media(max-width: 870px){
+    margin-right: 45rem;
+  }
+  @media(max-width: 725px){
+    margin-right: 65rem;
+  }
+  @media(max-width: 620px){
+    margin-right: 85rem;
+  }
+  @media(max-width: 520px){
+    margin-right: 95rem;
+  }
+  @media(max-width: 465px){
+    margin-right: 100rem;
+  }
+  @media(max-width: 445px){
+    margin-right: 110rem;
+  }
+  @media(max-width: 445px){
+    margin-right: 120rem;
+  }
+  @media(max-width: 345px){
+    margin-right: 130rem;
+  }
+  @media(max-width: 288px){
+    margin-right: 140rem;
+  }
+
+
 
   &-1{
     transition: all 1s;
@@ -282,8 +349,7 @@
 
 
   &-1{
-    grid-column: 1/2;
-    grid-row: 2/3;
+    
    @include phoneNav;
     
 
@@ -312,13 +378,17 @@
    
   }
   &-2{
-    grid-column: 1/2;
-    grid-row: 3/4;
+    
+    display: flex;
     @include phoneNav;
     
 
         
-
+    & svg{
+      margin-top: 1.3rem;
+      margin-left: 1.5rem;
+      fill: #fff;
+    }
 
 
     
@@ -337,8 +407,7 @@
 
   }
   &-3{
-    grid-column: 1/2;
-    grid-row: 4/5;
+    
     @include phoneNav;
 
 
@@ -356,8 +425,7 @@
 
   }
   &-4{
-    grid-column: 1/2;
-    grid-row: 5/6;
+    
     @include phoneNav;
     
 
@@ -380,4 +448,22 @@
   }
 
  
+}
+
+.serviceClick{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  & a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding-left: 4rem;
+
+    &:hover{
+      background: rgba(77, 77, 77, 0.74);
+
+    }
+  }
 }

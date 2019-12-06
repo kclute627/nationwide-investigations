@@ -4,6 +4,7 @@ import { Fade } from "react-reveal/Fade";
 import Dropdown from "../Components/Dropdown";
 import ReactSvg from "react-svg";
 import logo from "../assets/logo/logo-large.png";
+import logo2 from "../assets/logo/logo.png";
 import phone from "../assets/icons/mobile.svg";
 import mail from "../assets/icons/mail.svg";
 import down from "../assets/icons/down.svg";
@@ -11,7 +12,8 @@ import down from "../assets/icons/down.svg";
 class Navbar extends Component {
   state = {
     hover: false,
-    phoneClicked: false
+    phoneClicked: false,
+    servicesClick: false,
   };
 
   componentWillUnmount() {}
@@ -31,7 +33,15 @@ class Navbar extends Component {
     this.setState({
       phoneClicked: !this.state.phoneClicked
     });
+
   };
+
+  servicesClick = () => {
+    this.setState({
+      servicesClick: !this.state.servicesClick,
+
+    })
+  }
 
   render() {
     if (this.state.phoneClicked) {
@@ -68,6 +78,14 @@ class Navbar extends Component {
       </div>
     );
 
+    const serviceClick = (
+      <div className="serviceClick">
+        <Link to='/processserving'>Process Service</Link>
+        <Link to='/document'>Document Retrieval </Link>
+        <Link to="/investigations">  Investigations </Link>
+      </div>
+    )
+
     const phoneMenu = (
      
         <div className="phoneMenu">
@@ -79,7 +97,8 @@ class Navbar extends Component {
             {" "}
             <Link to="/"> Home </Link>{" "}
           </div>
-          <div className="phoneMenu-2"><Link to="/"> Services </Link></div>
+          <div className="phoneMenu-2" onClick={this.servicesClick}> Services <ReactSvg src={down}/></div>
+          {this.state.servicesClick ? serviceClick : null}
           <div className="phoneMenu-3"><Link to="/about"> About Us </Link></div>
           <div className="phoneMenu-4"><Link to="/contact"> Contact Us </Link></div> 
         </div>
@@ -108,7 +127,8 @@ class Navbar extends Component {
         </div>
         <div className="navbar__bottom">
           <Link to="/" className="navbar__bottom-logo">
-            <img src={logo} alt="" />
+            <img className="navbar__bottom-logo-1" src={logo} alt="" />
+            <img className="navbar__bottom-logo-2"src={logo2} alt=""/>
           </Link>
           {phoneNav}
           {this.state.phoneClicked ? phoneMenu : null}
