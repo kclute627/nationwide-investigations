@@ -7,6 +7,20 @@
         grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
         grid-template-rows: auto 22rem;
         background: rgb(253, 253, 253);
+
+
+        @media(max-width: 785px){
+            grid-template-columns: 0 1fr 0;
+            grid-template-rows: auto auto 5rem;
+      
+            padding-bottom: 0;
+            
+          }
+          @media(max-width: 523px){
+            grid-template-rows: auto auto;
+            
+            
+          }
         
     }
     &__header{
@@ -21,6 +35,20 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 6rem;
+
+        @media(max-width: 423px){
+
+            width: 65%;
+            margin-left: 7rem;
+            
+            
+        }
+        @media(max-width: 400px){
+            width: 55%;
+            font-size: 2rem;
+            margin-top: 1rem;
+            
+        }
         
     }
     &__img{
@@ -30,6 +58,11 @@
         justify-content: center;
         margin-top: 2.5rem;
         transition: all 1.5s;
+        
+        @media(max-width: 523px){
+            flex-direction: column;
+            
+        }
        
         
         & a{
@@ -43,6 +76,20 @@
             margin-right: 11.5rem;
             transition: all .5s;
             animation-timing-function: slide 2s;
+
+            @media(max-width: 523px){
+                margin-left: 11.5rem;
+                
+            }
+            @media(max-width: 423px){
+                margin-left: 6.5rem;
+                
+            }
+            @media(max-width: 360px){
+                margin-left: 3.5rem;
+                
+            }
+           
         }
         &-2{
             height:14.5rem;
@@ -50,6 +97,19 @@
             margin-left: -3rem;
             margin-right: 4.5rem;
             transition: all .5s;
+
+            @media(max-width: 523px){
+                margin-left: 18.5rem;
+                
+            }
+            @media(max-width: 423px){
+                margin-left: 13.5rem;
+                
+            }
+            @media(max-width: 360px){
+                margin-left: 10.5rem;
+                
+            }
         }
 
     }

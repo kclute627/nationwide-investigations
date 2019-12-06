@@ -3,10 +3,18 @@
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
     grid-template-rows: auto auto 10rem;
-    grid-template-rows: auto auto;
+    
 
     background: rgb(226, 226, 226);
     padding-bottom: 6rem;
+
+    @media(max-width: 770px){
+      grid-template-columns: minmax(0, 0.7fr) 1fr minmax(0, 0.7fr);
+      grid-template-rows: auto auto 5rem;
+
+      padding-bottom: 0;
+      
+    }
   }
   &__header {
     display: none;
@@ -29,8 +37,23 @@
     margin-top: 6rem;
     justify-content: space-around;
 
+    @media(max-width: 1750px){
+      justify-content: space-between;
+    }
+    @media(max-width: 1360px){
+      justify-content: space-around;
+    }
+
     @include respond(laptopSmall) {
-      justify-content: start;
+      
+    }
+    @media(max-width: 981px){
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+                
+                
     }
 
     &-box {
@@ -38,8 +61,16 @@
       grid-template-rows: 12rem 7rem 29rem 3rem;
       grid-template-columns: 31rem;
 
+      @media(max-width: 1750px){
+        
+      }
+      @media(max-width: 1360px){
+        
+        grid-template-rows: 12rem 7rem auto 3rem;
+      }
+
       @include respond(laptop) {
-        margin-right: 7rem;
+        
       }
       @include respond(laptopSmall) {
         grid-template-rows: 12rem 7rem auto 3rem;
@@ -48,15 +79,27 @@
 
       &:first-child {
         margin-left: 15rem;
+        @media(max-width: 1750px){
+        margin: 0;
+        }
 
         @include respond(laptop) {
         }
         @include respond(laptopSmall) {
           margin: 0;
         }
+        @media(max-width: 981px){
+          margin-top: 4.5rem;
+                    
+                    
+        }
       }
       &:last-child {
         margin-right: 15rem;
+
+        @media(max-width: 1750px){
+        margin: 0;
+        }
 
         @include respond(laptop) {
         }
@@ -107,11 +150,15 @@
         text-align: justify;
         letter-spacing: 0.2px;
 
+        @media(max-width: 1360px){
+          display: none;
+        }
+
         @include respond(laptop) {
           margin: 0 auto;
         }
         @include respond(laptopSmall) {
-          display: none;
+          
         }
       }
       &-btn {
@@ -134,6 +181,14 @@
           font-size: 2rem;
           box-shadow: none;
           transition: all 0.3s;
+          @media(max-width: 1360px){
+            display: none;
+          }
+          @media(max-width: 981px){
+            
+                      
+                      
+          }
           &:hover {
             transform: scale(1.1) translateY(-2px);
             box-shadow: 2px 2px 2px 2px rgba(5, 5, 5, 0.24);

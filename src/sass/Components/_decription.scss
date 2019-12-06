@@ -1,43 +1,70 @@
-.decription{
+.decription {
+  display: grid;
+  grid-template-rows: 12rem max-content;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 5rem;
 
-    display: grid;
-    grid-template-rows: 12rem max-content;
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin-bottom: 5rem;
+  @media (max-width: 400px) {
+        
 
-    &-header{
-        grid-row: 1/2;
-        text-align: center;
-        font-size: 4rem;
-        margin: 0 auto;
-        margin-top: 3rem;
-        text-transform: uppercase;
-        border-bottom: 2px solid $color-primary;
-        width: 45%;
+    
+}
 
-        @include respond(laptop){
-            width: 55%;
-            font-size: 3rem;
+  &-header {
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-primary;
+    width: 45%;
 
-        }
-
+    @media (max-width: 1750px) {
+      width: 75%;
     }
-    &-text{
-        width: 55%;
-        justify-self: center;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-        text-align: center;
-        margin-top: 1rem;
-        @include respond(laptop){
-            width: 65%;
-        }
-       
 
-        & a{
-            color: inherit;
-        }
-
+    @include respond(laptop) {
+      font-size: 3rem;
     }
+    @include respond(laptopSmall) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 795px) {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+    @media (max-width: 675px) {
+      font-size: 2rem;
+      
+    }
+    @media (max-width: 535px) {
+        font-size: 1.5rem;     
+
+        
+    }
+
+  }
+  &-text {
+    width: 55%;
+    justify-self: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 1rem;
+    @include respond(laptop) {
+      width: 65%;
+    }
+    @media (max-width: 795px) {
+        
+        margin-top: -1rem;
+
+      }
+
+    & a {
+      color: inherit;
+    }
+  }
 }
