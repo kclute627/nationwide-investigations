@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal/Fade";
+
 import Dropdown from "../Components/Dropdown";
 import ReactSvg from "react-svg";
 import logo from "../assets/logo/logo-large.png";
@@ -9,13 +10,14 @@ import phone from "../assets/icons/mobile.svg";
 import mail from "../assets/icons/mail.svg";
 import down from "../assets/icons/down.svg";
 
+
 class Navbar extends Component {
   state = {
     hover: false,
     phoneClicked: false,
     servicesClick: false,
   };
-
+ 
   componentWillUnmount() {}
 
   hoverHandler = () => {
@@ -33,6 +35,7 @@ class Navbar extends Component {
     this.setState({
       phoneClicked: !this.state.phoneClicked
     });
+    
 
   };
 
@@ -41,16 +44,21 @@ class Navbar extends Component {
       servicesClick: !this.state.servicesClick,
 
     })
+   
   }
 
   render() {
-    if (this.state.phoneClicked) {
-      document.body.style.overflow = "hidden";
+
+    if(this.state.phoneClicked){
+      document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no";
+    }
+    if(!this.state.phoneClicked){
+      document.documentElement.style.overflow = 'scroll';
+      document.body.scroll = "yes";
     }
 
-    if (!this.state.phoneClicked) {
-      document.body.style.overflow = "unset";
-    }
+    
 
     const phoneNav = (
       <div className="phone__nav" onClick={this.clickHandler}>
