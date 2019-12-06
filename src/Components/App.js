@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
 import logo from '../assets/logo/logo.png';
 import Navbar from "./Navbar";
@@ -15,6 +15,10 @@ class App extends Component {
 
   render() {
     return (
+      <Fragment>
+        <Navbar home="true" />
+
+      
       <div className="App">
         <Helmet>
           <meta charSet="utf-8" />
@@ -27,7 +31,7 @@ class App extends Component {
           <title>Chicago Illinois Process Server - ASAP Rush Serve</title>
          
         </Helmet>
-        <Navbar home="true" />
+        
         <Homepage />
         <Decription />
         <HomepageBtn />
@@ -36,6 +40,7 @@ class App extends Component {
         <Members />
         <Footer />
       </div>
+      </Fragment>
     );
   }
 }

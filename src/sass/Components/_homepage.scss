@@ -8,11 +8,12 @@
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: calc(100vh - 15rem);
-    overflow: hidden;
+    
     background: url('../../assets/handshake.jpg') no-repeat center center;
 
     @media(max-width: 600px){
       grid-template-columns: 100vw;
+      grid-template-rows: 100%;
     }
 
     &-header{

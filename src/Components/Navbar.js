@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal/Fade";
+import disableScroll from 'disable-scroll';
 
 import Dropdown from "../Components/Dropdown";
 import ReactSvg from "react-svg";
@@ -50,13 +51,17 @@ class Navbar extends Component {
   render() {
 
     if(this.state.phoneClicked){
-      document.documentElement.style.overflow = 'hidden';
-    document.body.scroll = "no";
-    document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+    //   document.documentElement.style.overflow = 'hidden';
+    // document.body.scroll = "no";
+    // document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
+    disableScroll.on();
     }
     if(!this.state.phoneClicked){
-      document.documentElement.style.overflow = 'scroll';
-      document.body.scroll = "yes";
+      // document.documentElement.style.overflow = 'scroll';
+      // document.body.scroll = "yes";
+
+      disableScroll.off(); 
     }
 
     
