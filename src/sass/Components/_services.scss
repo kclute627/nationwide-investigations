@@ -8,6 +8,10 @@
     background: rgb(226, 226, 226);
     padding-bottom: 6rem;
 
+    @include respond(laptopSmall) {
+      padding-bottom: 1rem;
+    }
+
     @media(max-width: 770px){
       grid-template-columns: minmax(0, 0.7fr) 1fr minmax(0, 0.7fr);
       grid-template-rows: auto auto 5rem;

@@ -14,7 +14,7 @@
       ) minmax(0, 0.7fr);
   }
   @media (max-width: 665px) {
-    grid-template-columns: minmax(0, 0.7fr) 100vw minmax(0, 0.7fr);
+    grid-template-columns: 0 100vw 0;
   }
 
   &__left {
@@ -29,6 +29,9 @@
     @include respond(phoneLarge) {
       margin-right: 5rem;
     }
+    @media (max-width: 665px) {
+        display: none;
+      }
 
     &-1 {
       display: flex;
@@ -219,7 +222,7 @@
     align-content: center;
 
     @media (max-width: 665px) {
-      grid-template-columns: minmax(0, 0.7fr) 100% minmax(0, 0.7fr);
+      grid-template-columns: minmax(0, 0.7fr) 100% 0;
     }
 
     &-text {
