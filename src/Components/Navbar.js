@@ -52,6 +52,7 @@ class Navbar extends Component {
     if(this.state.phoneClicked){
       document.documentElement.style.overflow = 'hidden';
     document.body.scroll = "no";
+    document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
     }
     if(!this.state.phoneClicked){
       document.documentElement.style.overflow = 'scroll';

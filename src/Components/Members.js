@@ -21,7 +21,7 @@ class Members extends Component {
             </a>
           </Fade>
 
-          <Fade right delay={500}>
+          <Fade left delay={500}>
             <a href="http://ilapps.com/">
               <img src={ilaaps} alt="" className="members__img-2" />
             </a>
