@@ -79,6 +79,7 @@
       @include respond(laptopSmall) {
         grid-template-rows: 12rem 7rem auto 3rem;
         margin-right: 0;
+        grid-template-columns: auto;
       }
 
       &:first-child {
