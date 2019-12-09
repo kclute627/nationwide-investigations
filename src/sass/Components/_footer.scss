@@ -237,6 +237,13 @@
         font-size: 1rem;
       }
 
+      & p{
+        @media (max-width: 420px) {
+          margin-left: -.1rem;
+        }
+
+      }
+
       & svg {
         height: 1.3rem;
         width: 1.9rem;
@@ -244,6 +251,13 @@
         margin-top: 0.8rem;
 
         @media (max-width: 720px) {
+          height: 1rem;
+          width: 1rem;
+          fill: #fff;
+          margin: 0;
+          margin-top: 0.3rem;
+        }
+        @media (max-width: 375px) {
           height: 1rem;
           width: 1rem;
           fill: #fff;
