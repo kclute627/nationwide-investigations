@@ -36,7 +36,14 @@
             @media(max-width:900px){
            
                 background-position: left;
-                height: 1fr;
+                height: 12rem;
+                width: 100%;
+                
+            }
+            @media(max-width: 600px){
+           
+                
+                height: 9rem;
                 width: 100%;
                 
             }
@@ -47,6 +54,12 @@
                 
                 color: #fff;
                 text-align: center;
+
+                @media(max-width: 600px){
+                    font-size: 5.2rem;
+
+                     
+                 }
 
                
 
@@ -65,10 +78,16 @@
                }
 
                @media(max-width:900px){
-                
+                margin-top: -8rem;
                 grid-template-columns:  80% 20%;
                  
              }
+             @media(max-width: 600px){
+                margin-top: -10rem;    
+    
+                         
+            }
+
 
             &-text{
                 grid-column: 1/2;
@@ -78,8 +97,18 @@
                 margin-top: 3rem;
 
                 @media(max-width:900px){
-                
+                    margin-left: 2rem;
                     margin-top: 2%;
+                     
+                 }
+                 @media(max-width: 600px){
+                    @media(max-width: 600px){
+                        width: 100%;
+                        
+    
+                         
+                     }
+
                      
                  }
 
