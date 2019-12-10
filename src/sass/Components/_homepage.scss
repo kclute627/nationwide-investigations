@@ -83,7 +83,7 @@
     margin-top: 1.5rem;
 
     @media (max-width: 600px) {
-      display: none;
+     
     }
     &:focus {
       outline: none;
@@ -98,9 +98,7 @@
       transition: all 0.2s linear;
       background: #fff;
 
-      @media (max-width: 600px) {
-        display: none;
-      }
+    
     }
     &:hover {
       background: rgba(0, 0, 0, 0.6);
@@ -116,9 +114,7 @@
     &:hover span::after {
       height: 100%;
 
-      @media (max-width: 600px) {
-        display: none;
-      }
+     
     }
 
     &::before,
@@ -148,9 +144,7 @@
     padding-top: 2rem;
     color: white;
 
-    @media (max-width: 600px) {
-      display: none;
-    }
+  
 
     &::before,
     &::after {
@@ -167,33 +161,24 @@
   left: 0;
   top: 0;
 
-  @media (max-width: 600px) {
-    display: none;
-  }
+  
 }
 .btn-left span::after {
   right: 0;
   bottom: 0;
 
-  @media (max-width: 600px) {
-    display: none;
-  }
+  
 }
 .btn-left:hover::before,
 .btn-left:hover::after {
   transition-delay: 0.3s;
 
-  @media (max-width: 600px) {
-    display: none;
-  }
+  
 }
 .btn-left:hover span::before,
 .btn-left:hover span::after {
   transition-delay: 0.2s;
 
-  @media (max-width: 600px) {
-    display: none;
-  }
 }
 
 @keyframes btn {
