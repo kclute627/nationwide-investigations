@@ -314,13 +314,15 @@
     transform: skewY(-45deg);
     margin: 0;
     margin-top: 1.5rem;
-    width: 3rem
+    width: 3rem;
+    background: #fff;
   }
   &-2{
     transform: skewY(45deg);
     margin: 0;
     width: 3rem;
     transition: all .3s;
+    background: #fff;
   }
 
   &-3{
