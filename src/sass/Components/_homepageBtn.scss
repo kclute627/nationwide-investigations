@@ -74,7 +74,7 @@
 
             @include respond(laptopSmall){
                 margin: 0 auto;
-                margin-left: 10%;
+               
                 
             }
             @media(max-width: 392px){
@@ -83,7 +83,8 @@
             }
             @media(max-width: 365px){
                 width: auto;
-                margin-top: 5rem;
+                
+                margin: 5rem 
                 
                 
             }

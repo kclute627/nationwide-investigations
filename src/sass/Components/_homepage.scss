@@ -1,121 +1,94 @@
 .homepage {
-  
-
-
-
-  
   &__container {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: calc(100vh - 15rem);
-    
-    background: url('../../assets/handshake.jpg') no-repeat center center;
 
-    @media(max-width: 600px){
+    background: url("../../assets/handshake.jpg") no-repeat center center;
+
+    @media (max-width: 600px) {
       grid-template-columns: 100vw;
-      grid-template-rows: 85vh;
+      grid-template-rows: 75vh;
     }
+    @media (max-width: 442px) {
+      grid-template-rows: 65vh;
+     }
 
-    &-header{
-
+    &-header {
       align-self: center;
-      justify-self: center;  
-      margin-top: 3.5rem; 
-      
+      justify-self: center;
+      margin-top: 3.5rem;
+
       color: #fff;
       margin-bottom: 14.5rem;
       display: flex;
       flex-direction: column;
-      
 
       & h1 {
         font-size: 9rem;
         text-shadow: 1px 1px 1px;
         margin-bottom: -3rem;
 
-        @include respond(laptopSmall){
-         font-size: 6rem;
+        @include respond(laptopSmall) {
+          font-size: 6rem;
+        }
 
-
+        @media (max-width: 791px) {
+          font-size: 5rem;
+          text-align: center;
+        }
+        @media (max-width: 600px) {
+          display: none;
+        }
       }
-
-      @media(max-width: 791px){
-        font-size: 5rem;
-        text-align: center;
-      }
-      @media(max-width: 600px){
-        font-size: 4rem;
-      }
-      @media(max-width: 500px){
-        font-size: 3.5rem;
-      }
-      @media(max-width: 410px){
-        font-size: 3rem;
-        
-      }
-      @media(max-width: 360px){
-        font-size: 2.5rem;
-        
-      }
-    }
       & h4 {
         font-size: 4rem;
         margin-left: 2rem;
-        
-        @include respond(laptopSmall){
+
+        @include respond(laptopSmall) {
           font-size: 3rem;
           margin-left: -1rem;
- 
-       }
-       @media(max-width: 791px){
-        font-size: 2.5rem;
+        }
+        @media (max-width: 791px) {
+          font-size: 2.5rem;
+        }
+        @media (max-width: 645px) {
+          font-size: 2rem;
+          margin-left: 3rem;
+          margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+          display: none;
+        }
       }
-      @media(max-width: 645px){
-        font-size: 2rem;
-        margin-left: 3rem;
-        margin-top: 1rem;
-      }
-      @media(max-width: 600px){
-        display: none;
-      }
-       
-      }
-
     }
-
   }
 }
-.btn{
-    &-left{
-   
-      display: inline-block;
-      position: relative;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      cursor: pointer;    
-      background: rgba(0, 0, 0, 0.30);
-      height: 8rem;
-      width: 25rem;  
-      
-      text-decoration: none;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 1.5rem;
-      
-      @media(max-width: 600px){
-        display: none;
-      }
-      &:focus{
-        outline: none;
+.btn {
+  &-left {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    height: 8rem;
+    width: 25rem;
 
-        
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5rem;
 
-
-
+    @media (max-width: 600px) {
+      display: none;
     }
-  
+    &:focus {
+      outline: none;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -125,60 +98,57 @@
       transition: all 0.2s linear;
       background: #fff;
 
-      
-      @media(max-width: 600px){
+      @media (max-width: 600px) {
         display: none;
       }
     }
-    &:hover{
-        background: rgba(0, 0, 0, .6);
-        transition-delay: .3s;
-  
-        &::before,
-        &::after{
-          width: 100%;
-        }
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+      transition-delay: 0.3s;
+
+      &::before,
+      &::after {
+        width: 100%;
       }
-      
+    }
+
     &:hover span::before,
-    &:hover span::after{
-        height: 100%;
-        
-        @media(max-width: 600px){
-          display: none;
-        }
+    &:hover span::after {
+      height: 100%;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
 
     &::before,
-    &::after{
-        transition-delay: 0.2s;
+    &::after {
+      transition-delay: 0.2s;
     }
     & span::before,
     span::after {
       transition-delay: 0s;
     }
-    &::before{
-        right: 0;
-  top: 0;
-
+    &::before {
+      right: 0;
+      top: 0;
     }
-    &::after{
-        left: 0;
-        bottom: 0;
-
+    &::after {
+      left: 0;
+      bottom: 0;
     }
-  }}
+  }
+}
 
-
-.span{
-  &__btn-1{
+.span {
+  &__btn-1 {
     display: block;
     height: 100%;
     width: 100%;
     padding-top: 2rem;
     color: white;
-    
-    @media(max-width: 600px){
+
+    @media (max-width: 600px) {
       display: none;
     }
 
@@ -191,108 +161,171 @@
       transition: all 0.2s linear;
       background: #fff;
     }
-
   }
 }
 .btn-left span::before {
   left: 0;
   top: 0;
-  
-  @media(max-width: 600px){
+
+  @media (max-width: 600px) {
     display: none;
   }
 }
 .btn-left span::after {
   right: 0;
   bottom: 0;
-  
-  @media(max-width: 600px){
+
+  @media (max-width: 600px) {
     display: none;
   }
 }
 .btn-left:hover::before,
 .btn-left:hover::after {
   transition-delay: 0.3s;
-  
-  @media(max-width: 600px){
+
+  @media (max-width: 600px) {
     display: none;
   }
 }
 .btn-left:hover span::before,
 .btn-left:hover span::after {
   transition-delay: 0.2s;
-  
-  @media(max-width: 600px){
+
+  @media (max-width: 600px) {
     display: none;
   }
 }
 
-
-
-@keyframes btn{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-
-.phone{
-  
-
-  &-box{
+.phone {
+  &-box {
     display: none;
+    color: #fff;
 
-
-
-    @media(max-width: 600px){
+    @media (max-width: 600px) {
+      grid-row: 1/2;
+      align-self: start;
+      justify-self: center;
       display: inline;
+
+      
+      margin-top: 10%;
+      display: grid;
+      grid-template-rows: auto auto 5rem;
+      grid-template-columns: 8rem 10em auto;
+    }
+    @media (max-width: 442px) {
+      grid-template-columns: 3rem 10em auto;
+     }
+
+    &-22 {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      font-size: 5.5rem;
       justify-self: center;
       align-self: center;
-     
-      border: 2px solid #fff;
-      margin-top: 5%;
-      display: grid;
-      grid-template-rows: 7rem 5rem;
-      grid-template-columns: 5rem 10em auto;
+      font-weight: 700;
+
+      @media (max-width: 442px) {
+       font-size: 4rem;
+      }
     }
 
-    &-1{
+    &-1 {
       grid-column: 1/-1;
+      grid-row: 2/3;
       justify-self: center;
-    
+      margin-top: -2rem;
       font-size: 4rem;
+      @media (max-width: 442px) {
+        font-size: 3rem;
+       }
     }
-    
-    &-3{
+
+    &-3 {
+      text-decoration: underline;
+      color: #fff;
+      font-size: 2.5rem;
+      
+      grid-column: 2/-1;
+      grid-row: 7/8;
+      
+      
+      justify-self: start;
+      align-self: center;
+      margin-left: 4.5rem;
+      
+    }
+
+    &-4 {
       text-decoration: none;
       color: #fff;
       font-size: 2.5rem;
       justify-self: start;
       align-self: center;
       grid-column: 2/-1;
-      grid-row: 2/3;
-      display: flex;
-      
-
-      & svg{
-        height: 2.5rem;
-        width: 3rem;
-        fill: #fff;
-        
-        margin-right: 2.5rem;
-        margin-top: 1.3rem;
-      }
+      grid-row: 5/6;
+      margin-left: 4.5rem;
     }
+    &-5 {
+      text-decoration: none;
+      color: #fff;
+      font-size: 2.5rem;
+      justify-self: start;
+      align-self: center;
+      grid-column: 2/4;
+      grid-row: 4/5;
+      margin-left: 4.5rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
 
-    
+  & svg {
+    fill: #fff;
+  }
+}
+
+.injected-svg {
+  height: 2.5rem;
+  width: 3rem;
+  fill: #fff;
+
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  fill: #fff;
+}
+
+.svg {
+  &-1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: start;
+    align-self: start;
 
   }
- 
+  &-2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: start;
+    align-self: start;
+  }
+  &-3 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    justify-self: start;
+    align-self: start;
+  }
 }
