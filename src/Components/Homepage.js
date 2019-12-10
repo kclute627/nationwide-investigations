@@ -32,7 +32,7 @@ class Homepage extends Component {
                       <div className="phone-box-info">
                           
                       </div>
-                      <a href="href=malto:info@nationwide-investigations.com" className="phone-box-3">EMAIL</a>
+                      <a href="href=malto:info@nationwide-investigations.com" className="phone-box-3">Email</a>
                       <div className="phone-box-5">  116 W Jackson <br/> Suite #254 <br/>Chicago, IL 60604 </div>
                       
                       <a href="href=tel:3123613598" className="phone-box-4">  312-361-3598 </a>
