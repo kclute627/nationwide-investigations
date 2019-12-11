@@ -53,7 +53,7 @@ class About extends Component {
               
 
             </div>
-            <Link to='/contact' className="btn-left about__btn"> <span className="span__btn-1">Get A Free Quote</span></Link>   
+            <Link to='/contact' className=" about__btn">Get A Free Quote</Link>   
           </div>
         </div>
         <Footer />

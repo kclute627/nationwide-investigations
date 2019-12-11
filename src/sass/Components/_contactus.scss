@@ -4,6 +4,19 @@
     grid-template-columns: 0.1fr  minmax(60rem, 1fr) minmax(60rem, 1fr) 0.1fr;
     grid-template-rows: auto auto 5rem;
     background: rgb(218, 218, 218);
+
+    @media(max-width: 1200px){
+      grid-template-columns: 0.1fr  1fr 65% 0.1fr;
+      
+  
+    }
+    @media(max-width: 600px){
+      grid-template-columns: 0.1fr  0 100% 0;
+      
+      
+       
+   
+     }
   }
   &__header {
     grid-column: 1/-1;
@@ -24,6 +37,14 @@
     align-items: center;
     justify-content: center;
 
+    @media(max-width: 600px){
+     height: 7rem;
+     font-size: 5rem;
+      
+       
+   
+     }
+
     &-1 {
       text-align: center;
     }
@@ -37,14 +58,52 @@
     width: 100%;
     font-family: "Raleway";
 
+    @media(max-width: 1200px){
+     align-items: end;
+     align-self: end;
+     justify-self: end;
+     width: 90%;
+      
+  
+    }
+    @media(max-width: 1000px){
+     
+      width: 80%;
+       
+   
+     }
+     @media(max-width: 1000px){
+     
+      align-content: start;
+      justify-items: start;
+      align-items: start;
+       margin-left: -23rem;
+   
+     }
+
 
     &-1{
       margin-left: 2em;
+
+      @media(max-width: 600px){
+        margin-left: 0;
+        
+        
+         
+     
+       }
 
     }
 
     &-2{
       margin-left: 2em;
+      @media(max-width: 600px){
+        margin-left: 0;
+        
+        
+         
+     
+       }
 
     }
 
@@ -77,6 +136,20 @@
       font-family: "Raleway";
       width: 53rem;
       margin-left: 3rem;
+
+      @media(max-width: 1000px){
+     
+        width: 80%;
+         
+     
+       }
+       @media(max-width: 600px){
+        margin-left: 0;
+        
+        
+         
+     
+       }
     }
     &-phone{
       @include input;
@@ -93,6 +166,8 @@
       margin-top: 2.5rem;
       font-size: 2rem;
       cursor: pointer;
+
+     
     }
   }
   &__left {
@@ -129,6 +204,39 @@
         
         
        }
+       @media(max-width: 1200px){
+        height: 35rem;
+        width: 35rem;
+        right: 4rem;
+        
+    
+      }
+      @media(max-width: 895px){
+        height: 35rem;
+        width: 35rem;
+        right: 9rem;
+        
+    
+      }
+      
+      
+
+      @media(max-width: 750px){
+     
+        height: 25rem;
+        width: 25rem;
+        right: 6rem;
+         
+     
+       }
+       
+      @media(max-width: 600px){
+        display: none;
+        
+         
+     
+       }
+    
 
       
     }
@@ -152,6 +260,22 @@
   width: 45rem;
   margin-top: 2.5rem;
   margin-left: 8.5rem;
+
+  @media(max-width: 1000px){
+     
+    width: 20rem
+     
+ 
+   }
+   @media(max-width: 600px){
+  margin-left: 10%;
+    
+    
+     
+ 
+   }
+
+  
   &:focus {
     outline: none;
   }
@@ -277,7 +401,22 @@
     
       
       
-     }
+  }
+  @media(max-width: 1200px){
+    top: 35rem;
+    left: 50%;
+   
+    
+
+
+  }
+  @media(max-width: 600px){
+    display: none;
+    
+     
+ 
+   }
+
 
      
       

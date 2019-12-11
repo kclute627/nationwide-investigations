@@ -30,6 +30,11 @@ $color-gray: rgb(61, 61, 61);
   outline: none;
   font-size: 2rem;
   justify-self: center;
+
+  @media(max-width: 600px){
+    width: 75%;
+    margin-top: 1.5rem;
+  }  
   
 }
 @mixin phoneNav{
