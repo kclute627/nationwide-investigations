@@ -6,6 +6,20 @@
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: 20rem auto auto;
 
+    @include respond(laptop){
+      grid-template-columns: 5rem 1fr 1fr 0;
+    }
+    @media (max-width: 900px){
+      grid-template-columns: 2rem 50% 50% 0;
+    }
+    @media (max-width: 900px){
+      grid-template-columns: 2rem 1fr 2rem;
+      grid-template-rows: 10rem auto auto;
+    }
+    @media (max-width: 450px){
+      grid-template-columns: 2rem calc(100%-2rem) 2rem;
+    }
+
 
     &-img{
       grid-column: 3/5;
@@ -16,11 +30,22 @@
       & img {
         height: 70rem;
         width: 110rem;
-        @include respond(laptop){
+
+        @media (max-width: 1678px){
           height: 70rem;
-          width: 80rem;
+          width: 100%;
           margin-bottom: 15rem;
         }
+
+
+        @include respond(laptop){
+          height: 70rem;
+          width: 100%;
+          margin-bottom: 15rem;
+        }
+      }
+      @media (max-width: 900px){
+        display: none;
       }
     }
 
@@ -46,6 +71,17 @@
         width: 40rem;
         font-weight: 700;
         margin-top: 2.5rem;
+        @media (max-width: 900px){
+          margin-top: 1rem;
+        }
+        @media (max-width: 450px){
+          width: 95%;
+          font-size: 3.5rem;;
+        }
+        @media (max-width: 320px){
+          width: 95%;
+          font-size: 2rem;;
+        }
       }
       &-text{
         width: 85%;
@@ -58,6 +94,11 @@
         grid-column: 3/4;
         grid-row: 2/3;
 
+        @media (max-width: 900px){
+          grid-row: 3/4;
+          grid-column: 2/3;
+        }
+
         &-header{
             border-bottom: 2px solid $color-primary;
         text-transform: capitalize;
@@ -68,12 +109,27 @@
         font-weight: 700;
         margin-top: 2.5rem;
 
+        @media (max-width: 900px){
+          margin-top: 1.5rem;
+        }
+        @media (max-width: 450px){
+          width: 95%;
+          font-size: 3.5rem;
+        }
+        @media (max-width: 320px){
+          width: 95%;
+          font-size: 2rem;;
+        }
+
         }
         &-text{
             width: 75%;
             text-align: justify;
             margin: 0 auto;
             margin-top: 2.5rem;
+            @media (max-width: 900px){
+              width: 75%;
+            }
             
             & ul{
                 list-style-type: none;
@@ -83,11 +139,24 @@
             align-content: center;
             align-items: center;
             justify-items: center;
+            @media (max-width: 900px){
+             
+            align-content: center;
+            
+            justify-items: start;
+            grid-template-columns: 5rem 100%;
+            }
+            @media (max-width: 360px){
+              grid-template-columns: 5rem 100%;
+            }
 
               & li {
                 font-size: 2rem;
                 margin-bottom: 2.5rem;
                 text-transform: capitalize;
+                @media (max-width: 900px){
+                  margin-bottom: 1rem;
+                }
 
               } & span{
                 font-size: 2rem;
@@ -99,6 +168,10 @@
                     height: 4rem;
                     width:4rem;
                     margin-bottom: 3rem;
+                    @media (max-width: 900px){
+                      justify-self: center;
+                      margin-bottom: 0;
+                    }
                   
                 }
 
@@ -110,6 +183,11 @@
       grid-column: 2/3;
       grid-row: 3/4;
       margin-top: -5rem;
+      @media (max-width: 900px){
+        grid-row: 4/5;
+        grid-column: 2/3;
+        margin-top: 0;
+      }
 
       &-header {
         border-bottom: 2px solid $color-primary;
@@ -119,6 +197,14 @@
         font-size: 3.5rem;
         width: 40rem;
         font-weight: 700;
+
+        @media (max-width: 450px){
+          width: 75%;
+        }
+        @media (max-width: 450px){
+          width: 95%;
+          font-size: 3.5rem;
+        }
         
       }
       &-text{
@@ -142,6 +228,10 @@
       grid-row: 4/5;
       margin-bottom: 2.5rem;
       justify-self: end;
+      @media (max-width: 900px){
+        grid-row: 5/6;
+        grid-column: 2/3;
+      }
 
       &-header {
         border-bottom: 2px solid $color-primary;
@@ -152,6 +242,11 @@
         width: 40rem;
         font-weight: 700;
         margin-top: 2.5rem;
+        
+        @media (max-width: 450px){
+          width: 95%;
+          font-size: 3.5rem;
+        }
       }
       &-text{
         width: 85%;
