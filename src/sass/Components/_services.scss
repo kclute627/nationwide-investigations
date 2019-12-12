@@ -2,11 +2,15 @@
   &__container {
     display: grid;
     grid-template-columns: minmax(0, 0.7fr) minmax(90rem, 75%) minmax(0, 0.7fr);
-    grid-template-rows: auto auto 10rem;
+    grid-template-rows: auto auto 4.5rem;
     
 
     background: rgb(226, 226, 226);
+<<<<<<< HEAD
     padding-bottom: 1rem;
+=======
+    
+>>>>>>> ef618c3a98aa306bf065069b42e41f59a435bc55
 
     @include respond(laptopSmall) {
       padding-bottom: 1rem;

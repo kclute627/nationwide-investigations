@@ -32,7 +32,7 @@ class Document extends Component {
           <div className="document-middle-text">
             <div className="document-middle-text-1">
               <h3 className="document-middle-text-header">
-                Docuemnt Retrieval
+                Document Retrieval
               </h3>
               <div className="document-middle-text-1">
                 Our company has several court researchers and filers located
